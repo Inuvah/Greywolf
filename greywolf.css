@@ -3,31 +3,27 @@
     height: 10%;
     box-shadow: 0px 4px 4px 0px  black;
     display: inline-block;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding:1%;
-}
-
-.navbar li {
-    padding: 1%;
-    font-family: shree;
+    left: 0%;
 }
 
 .navbar img {
-    max-width: 2%;
-    max-height: 2%;
-    font-style:;
+    max-width: 20%;
+    max-height: 20%;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 2%;
 }
 
+/*Footer farver, text og position*/
 footer {
     width: 100%;
     background-color: #1F2716;
+    height: 10%;
     bottom: 0%;
     padding: 1%;
-    display: flex;
+    display: inline-block;
     position: fixed;
+    left: 0%;
 }
 
 .foot ul {
@@ -49,27 +45,56 @@ footer {
     src: url(Fonts/shreedev0714-bold-italic-webfont.ttf);
 }
 
+
+
+/*Footer dropmenu*/
+.foot button {
+    background-color: black;
+    color: white;
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+}
+
+/*container til footer*/
+.foot {
+    display: inline-block;
+}
+
+/*container til kontakt info*/
+.kontakt {
+    display: none;
+    position: relative;
+    background-color: #1F2716;
+    min-width: 100%;
+    z-index: 3;
+}
+
+/*Alle links i footer*/
 .foot a {
     color: white;
     text-decoration: none;
     font-family: inter;
-}
-
-.foot {
-    align-self: center;
-}
-
-.kontakt {
-    margin-right: 2%;
-    margin-left: 2%;
+    display: block;
 }
 
 .help {
-    margin-right: 2%;
+    display: none;
+    position: relative;
+    background-color: #1F2716;
+    min-width: 100%;
+    z-index: 2;
 }
 
 .links {
-    margin-right: 2%;
+    display: none;
+    position: relative;
+    background-color: #1F2716;
+    min-width: 100%;
+    z-index: 1;
 }
 
-
+/*En class tilføjet med JS for at vise og skjule menuen*/
+.show {
+    display: inline-block;
+}
