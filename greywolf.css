@@ -14,6 +14,78 @@
     margin-left: 2%;
 }
 
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #1F2716;
+    float: right;
+    height: 25px;
+    width: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menulogo {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+}
+
+.menu {
+    width: 50%;
+    height: 100vh;
+    background-color: #1F2716;
+    padding: 50px;
+    transform: translateX(-500px);
+    transition: 0.5s;
+}
+
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.showmenu {
+    transform: translateX(0);
+}
+
+.menu li: :last-child {
+    border-bottom: none;
+}
+
+.menu li: :first-child a {
+    font-weight: bold;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-weight 0.25;
+}
+
+@media screen and (min width: 1000px) {
+    .menu{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu li a{
+        font-size: 16px;
+    }
+}
+
+
 /*Footer farver, text og position*/
 footer {
     width: 100%;

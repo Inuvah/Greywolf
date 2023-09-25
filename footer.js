@@ -9,3 +9,10 @@ function helpFunction() {
 function linkFunction() {
     document.getElementById("linkInfo").classList.toggle("show");
 }
+
+var logo = document.querySelector('.container');
+var menu = document.querySelector('.menu');
+
+logo.addEventListener('click',function(){
+    menu.classList.toggle('showmenu')
+});
