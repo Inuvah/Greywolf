@@ -1,4 +1,4 @@
-//Array af hoodie produkter
+//Array liste af info om hoodie produkter
 var jsonObj = {"hoodies": [
     {
     title: '350',
@@ -43,19 +43,19 @@ var jsonObj = {"hoodies": [
 
 ]
 }
-//Tjekker hvor mange produkter der er
+//Tjekker hvor mange produkter der er, laver variablen count som er = længden af array listen
 var count = Object.keys(jsonObj.hoodies).length
 
 //Finder html elementet det skal være i og giver den en variable via id
 var container = document.getElementById('hoodieProdukter');
-//for loop som starter ved 0 indtil i er stører end mængden af produkter
+//for loop som starter ved 0 indtil i er stører end mængden af produkter hvis den ikke er i + 1
 for(var i=0;i<count;i++){
  
-    //Laver en variable for hvert produkt
+    //Laver en variable for hvert produkt for hver gang i ændres
     var obj = jsonObj.hoodies[i];
     //laver prisen om til en variable (nemmere hvis den skal bruges meget senere)
     var price = obj.title;
-    //tilføjer hvert produkt til HTML elementet som den hentede id fra tidligere
+    //tilføjer hvert produkt til HTML elementet som den hentede id fra tidligere (id=hoodieProdukter som er en div)
     container.innerHTML
     +=price;
 }
