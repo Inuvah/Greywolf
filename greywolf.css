@@ -39,11 +39,12 @@
 }
 
 .menu {
+    float: right;
     width: 50%;
     height: 100vh;
     background-color: #1F2716;
     padding: 50px;
-    transform: translateX(-500px);
+    transform: translateX(200%);
     transition: 0.5s;
 }
 
