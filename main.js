@@ -3,17 +3,17 @@ var jsonObj = {"hoodies": [
     {
     title: '350',
     id: "1",
-    imgUrl:'',
+    imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
 },
 {
     title: '350',
     id: "2",
-    imgUrl:'',
+    imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
 },
 {
     title: '350',
     id: "3",
-    imgUrl:'',
+    imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
 },
 {
     title: '350',
@@ -55,7 +55,15 @@ for(var i=0;i<count;i++){
     var obj = jsonObj.hoodies[i];
     //laver prisen om til en variable (nemmere hvis den skal bruges meget senere)
     var price = obj.title;
+    //constant variable til billedernes container der efter laver den endnu en div for hvert produkt (i) og giver den en class
+    const imgBox = document.createElement('div');
+    imgBox.setAttribute('class', 'imgBox');
     //tilføjer hvert produkt til HTML elementet som den hentede id fra tidligere (id=hoodieProdukter som er en div)
-    container.innerHTML
-    +=price;
+
+    const img = document.createElement('img');
+    img.src = obj.imgUrl;
+
+    container.appendChild(imgBox);
+    container.appendChild(img);
 }
+
