@@ -24,8 +24,6 @@ var jsonObj = {"hoodies": [
     imgUrl:'',
     color:'Hoodie: Grå',
 },
-
-
 ]
 }
 //Tjekker hvor mange produkter der er, laver variablen count som er = længden af array listen
