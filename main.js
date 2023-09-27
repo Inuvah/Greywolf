@@ -1,45 +1,30 @@
 //Array liste af info om hoodie produkter
 var jsonObj = {"hoodies": [
     {
-    title: '350',
+    title: '399 DKK',
     id: "1",
     imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
+    color:'Hoodie: Mørk beige',
 },
 {
-    title: '350',
+    title: '399 DKK',
     id: "2",
     imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
+    color:'Hoodie: Sort',
 },
 {
-    title: '350',
+    title: '399 DKK',
     id: "3",
     imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
+    color:'Hoodie: Hvid',
 },
 {
-    title: '350',
+    title: '399 DKK',
     id: "4",
     imgUrl:'',
+    color:'Hoodie: Grå',
 },
-{
-    title: '350',
-    id: "5",
-    imgUrl:'',
-},
-{
-    title: '350',
-    id: "6",
-    imgUrl:'',
-},
-{
-    title: '350',
-    id: "7",
-    imgUrl:'',
-},
-{
-    title: '350',
-    id: "8",
-    imgUrl:'',
-},
+
 
 ]
 }
@@ -55,15 +40,48 @@ for(var i=0;i<count;i++){
     var obj = jsonObj.hoodies[i];
     //laver prisen om til en variable (nemmere hvis den skal bruges meget senere)
     var price = obj.title;
+
+    var color = obj.color;
     //constant variable til billedernes container der efter laver den endnu en div for hvert produkt (i) og giver den en class
     const imgBox = document.createElement('div');
     imgBox.setAttribute('class', 'imgBox');
-    //tilføjer hvert produkt til HTML elementet som den hentede id fra tidligere (id=hoodieProdukter som er en div)
 
+    const textBox = document.createElement('table');
+    textBox.setAttribute('class', 'textBox');
+
+    const textBoxRight = document.createElement('tr');
+    const textBoxLeft = document.createElement('tr');
+    //tilføjer hvert produkt til HTML elementet som den hentede id fra tidligere (id=hoodieProdukter som er en div)
     const img = document.createElement('img');
+    img.setAttribute('class', 'produktImg')
     img.src = obj.imgUrl;
 
+    const pris = document.createElement('td');
+    pris.setAttribute('id', 'pris');
+    pris.textContent += price;
+
+    const farve = document.createElement('td');
+    farve.setAttribute('id', 'farve');
+    farve.textContent += color;
+
+    const okologi = document.createElement('td');
+    okologi.textContent += "100% økologisk bomuld";
+
+    const sizes = document.createElement('td');
+    sizes.textContent += "XS  |  S  |  M  |  L  |  XL";
+
+    //container = div hoodieProdukter tilføjer billeder osv som børn til denne div altså de ligger nu inde i min div box
     container.appendChild(imgBox);
-    container.appendChild(img);
+    imgBox.appendChild(img);
+    imgBox.appendChild(textBox);
+    textBox.appendChild(textBoxLeft);
+    textBox.appendChild(textBoxRight);
+
+    textBoxLeft.appendChild(farve);
+    textBoxRight.appendChild(okologi);
+    textBoxRight.appendChild(pris);
+    textBoxLeft.appendChild(sizes);
+    
+
 }
 

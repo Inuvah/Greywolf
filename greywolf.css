@@ -68,8 +68,13 @@ body {
     border-bottom: none;
 }
 
+.firstMenu {
+    margin-top: 4vh;
+}
+
 .menu li: :first-child a {
     font-weight: bold;
+    
 }
 
 .menu li a {
@@ -226,6 +231,48 @@ footer {
 }
 
 /*produkt side*/
+#hoodieProdukter {
+    width: 100vw;
+}
+
 .imgBox {
-    border-style: solid;
+    max-width: 40%;
+    width: 40%;
+    margin-left: 40vw;
+    margin-right: 50vw;
+    z-index: 2;
+    font-family: inter;
+}
+
+.produktImg {
+    align-self: center;
+}
+
+.textBox {
+
+}
+
+.textBox table {
+    width: 100%;
+}
+
+.textBox table, th, td {
+
+}
+
+#pris {
+    text-align: right;
+}
+
+#farve {
+    text-align: left;
+    font-weight: bolder;
+}
+
+#okologi {
+    text-align: left;
+}
+
+#sizes {
+    text-align: right;
 }
