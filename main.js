@@ -21,7 +21,7 @@ var jsonObj = {"hoodies": [
 {
     title: '399 DKK',
     id: "4",
-    imgUrl:'',
+    imgUrl:'img/HoodieGrey.png',
     color:'Hoodie: Grå',
 },
 
@@ -46,16 +46,19 @@ for(var i=0;i<count;i++){
     const imgBox = document.createElement('div');
     imgBox.setAttribute('class', 'imgBox');
 
+    //Laver table som fordeler texten under produkt i deres egen box side by side
     const textBox = document.createElement('table');
     textBox.setAttribute('class', 'textBox');
 
+    //2 elementer i tabelen øverst og nederst de ligger sig på en linje ned ad
     const textBoxRight = document.createElement('tr');
     const textBoxLeft = document.createElement('tr');
-    //tilføjer hvert produkt til HTML elementet som den hentede id fra tidligere (id=hoodieProdukter som er en div)
+    //tilføjer hvert produkt billede til HTML elementet som den hentede id fra tidligere (id=hoodieProdukter som er en div)
     const img = document.createElement('img');
     img.setAttribute('class', 'produktImg')
     img.src = obj.imgUrl;
 
+    //Alt text under produkt billederne bliver tilføjet som dele af tabelen
     const pris = document.createElement('td');
     pris.setAttribute('id', 'pris');
     pris.textContent += price;
@@ -77,7 +80,8 @@ for(var i=0;i<count;i++){
     textBox.appendChild(textBoxLeft);
     textBox.appendChild(textBoxRight);
 
-    textBoxLeft.appendChild(farve);
+    //table
+    textBoxLeft.appendChild(farve);d
     textBoxRight.appendChild(okologi);
     textBoxRight.appendChild(pris);
     textBoxLeft.appendChild(sizes);

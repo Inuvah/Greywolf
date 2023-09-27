@@ -1,8 +1,6 @@
 body {
     height: 100%;
     width: 100%;
-    margin: 0;
-    overflow: hidden;
 }
 
 .navbar {
@@ -231,15 +229,17 @@ footer {
 }
 
 /*produkt side*/
+/*Container til hvert produkt laver flere med js*/
 #hoodieProdukter {
     width: 100vw;
+    height: 100%;
+    overflow: auto;
 }
 
+/*Container til billede*/
 .imgBox {
-    max-width: 40%;
-    width: 40%;
-    margin-left: 40vw;
-    margin-right: 50vw;
+    width: 100%;
+    margin-left: 20vw;
     z-index: 2;
     font-family: inter;
 }
@@ -248,10 +248,12 @@ footer {
     align-self: center;
 }
 
+/*Container til text*/
 .textBox {
 
 }
 
+/*Table for at nemt bestemme text position*/
 .textBox table {
     width: 100%;
 }
@@ -260,6 +262,7 @@ footer {
 
 }
 
+/*Text under produkt*/ 
 #pris {
     text-align: right;
 }
@@ -276,3 +279,4 @@ footer {
 #sizes {
     text-align: right;
 }
+/**/
