@@ -81,7 +81,7 @@ for(var i=0;i<count;i++){
     textBox.appendChild(textBoxRight);
 
     //table
-    textBoxLeft.appendChild(farve);d
+    textBoxLeft.appendChild(farve);
     textBoxRight.appendChild(okologi);
     textBoxRight.appendChild(pris);
     textBoxLeft.appendChild(sizes);

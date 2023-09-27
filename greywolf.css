@@ -231,9 +231,8 @@ footer {
 /*produkt side*/
 /*Container til hvert produkt laver flere med js*/
 #hoodieProdukter {
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    overflow: auto;
 }
 
 /*Container til billede*/
