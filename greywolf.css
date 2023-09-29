@@ -256,7 +256,7 @@ footer {
     padding: 1%;
     border-radius: 30px; 
     text-align: center;
-    left: 0px;
+    right: 0px;
 }
 
 .colorMoreA {
@@ -269,6 +269,8 @@ footer {
 
 .produktImg {
     align-self: center;
+    width: 70%;
+    height: 70%;
 }
 
 /*Container til text*/
