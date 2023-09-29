@@ -1,33 +1,108 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
 .navbar {
     width: 100%;
-    height: 10%;
-    box-shadow: 0px 4px 4px 0px  black;
+    max-height: 10vh;
+    height: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     display: inline-block;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding:1%;
-}
-
-.navbar li {
-    padding: 1%;
-    font-family: shree;
+    left: 0%;
 }
 
 .navbar img {
-    max-width: 2%;
-    max-height: 2%;
-    font-style:;
+    max-width: 20vw;
+    max-height: 20vh;
+    position: relative;
+    margin-top: 4vh;
+    margin-left: 2vw;
 }
 
+
+.container {
+    float: right;
+    height: 17px;
+    margin-right: 3%;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menulogo {
+    height: 3px;
+    width: 30px;
+    background-color: black;
+}
+
+.menu {
+    float: right;
+    width: 50%;
+    height: 60vh;
+    background-color: #1F2716;
+    padding: 25px;
+    transform: translateX(130%) translateY(8.09vh);
+    transition: 0.5s;
+}
+
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 6px 0;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: mada;
+}
+
+.showmenu {
+    transform: translateX(9vw) translateY(8.09vh);
+}
+
+.menu li: :last-child {
+    border-bottom: none;
+}
+
+.firstMenu {
+    margin-top: 4vh;
+}
+
+.menu li: :first-child a {
+    font-weight: bold;
+    
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-weight 0.25;
+}
+
+@media screen and (min width: 1000px) {
+    .menu{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu li a{
+        font-size: 16px;
+    }
+}
+
+
+/*Footer farver, text og position*/
 footer {
     width: 100%;
     background-color: #1F2716;
     bottom: 0%;
-    padding: 1%;
-    display: flex;
-    position: fixed;
+    display: inline-block;
+    position: absolute;
+    left: 0%;
 }
 
 .foot ul {
@@ -49,27 +124,180 @@ footer {
     src: url(Fonts/shreedev0714-bold-italic-webfont.ttf);
 }
 
+@font-face {
+    font-family: mada;
+    src: url(Fonts/Mada-Regular.ttf)
+}
+
+
+/*Footer dropmenu*/
+.foot button {
+    background-color: #1F2716;
+    color: white;
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+    margin-inline-start: 35%;
+    width: 30%;
+}
+
+/*container til footer*/
+.foot {
+    display: inline-block;
+}
+
+/*container til kontakt info*/
+.kontakt {
+    display: none;
+    position: relative;
+    background-color: #1F2716;
+    min-width: 100%;
+    z-index: 3;
+    margin-inline-start: 20%;
+}
+
+/*Alle links i footer*/
 .foot a {
     color: white;
     text-decoration: none;
     font-family: inter;
-}
-
-.foot {
-    align-self: center;
-}
-
-.kontakt {
-    margin-right: 2%;
-    margin-left: 2%;
+    display: block;
 }
 
 .help {
-    margin-right: 2%;
+    display: none;
+    position: relative;
+    background-color: #1F2716;
+    min-width: 100%;
+    z-index: 2;
+    margin-inline-start: 20%;
 }
 
 .links {
-    margin-right: 2%;
+    display: none;
+    position: relative;
+    background-color: #1F2716;
+    min-width: 100%;
+    z-index: 1;
+    margin-inline-start: 20%;
 }
 
+/*En class tilføjet med JS for at vise og skjule menuen*/
+.show {
+    display: inline-block;
+}
 
+/*Katagorier forside*/
+.category {
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.scroll {
+    overflow-x: scroll;
+    padding-right: 17px;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+.category img {
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    margin-bottom: 0.1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.category p {
+    font-family: inter;
+    font-style: bold;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*produkt side*/
+/*Container til hvert produkt laver flere med js*/
+#hoodieProdukter {
+    width: 100%;
+    height: 100%;
+}
+
+/*Container til billede*/
+.imgBox {
+    width: 50%;
+    margin-left: 20vw;
+    z-index: 2;
+    font-family: inter;
+    position: relative;
+}
+
+.colorMore {
+    z-index: 1;
+    position: relative;
+    top: -50px;
+    background-color: #1F2716;
+    opacity: 80%;
+    width: 20%;
+    padding: 1%;
+    border-radius: 30px; 
+    text-align: center;
+    left: 0px;
+}
+
+.colorMoreA {
+    color: white;
+    padding: 4%;
+    text-decoration: none;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.produktImg {
+    align-self: center;
+}
+
+/*Container til text*/
+.textBox {
+
+}
+
+/*Table for at nemt bestemme text position*/
+.textBox table {
+    width: 100%;
+}
+
+.textBox table, th, td {
+
+}
+
+/*Text under produkt*/ 
+#pris {
+    text-align: right;
+}
+
+#farve {
+    text-align: left;
+    font-weight: bolder;
+}
+
+#okologi {
+    text-align: left;
+}
+
+#sizes {
+    text-align: right;
+}
+/**/
