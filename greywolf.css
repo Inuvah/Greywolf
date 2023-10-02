@@ -1,5 +1,5 @@
 body {
-    height: 100%;
+    min-height: 100vh;
     max-width: 100vw;
 }
 .nav {
@@ -12,13 +12,13 @@ body {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     left: 0%;
     overflow: hidden;
+    z-index: 10;
 }
 
 .navbar img {
-    max-width: 20vw;
-    max-height: 20vh;
-    position: relative;
-    margin-top: 4vh;
+    max-height: 10%;
+    position: absolute;
+    margin-top: 2vh;
     margin-left: 2vw;
 }
 
@@ -102,10 +102,13 @@ body {
 footer {
     width: 100%;
     background-color: #1F2716;
-    bottom: 0%;
     display: inline-block;
-    position: absolute;
+    position: relative;
     left: 0%;
+    bottom: -100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 .foot ul {
@@ -140,27 +143,28 @@ footer {
     padding: 2%;
     border: none;
     cursor: pointer;
-    margin-inline-start: 35%;
     width: 30%;
+    display: flex;
+    margin-left: 40%;
 }
 
 /*container til footer*/
 .foot {
-    display: inline-block;
+    display: inline-block
 }
 
 /*container til kontakt info*/
 .kontakt {
     display: none;
-    position: relative;
     background-color: #1F2716;
     min-width: 100%;
     z-index: 3;
-    margin-inline-start: 20%;
+    left: 0;
 }
 
 /*Alle links i footer*/
 .foot a {
+    position: absolute;
     color: white;
     text-decoration: none;
     font-family: inter;
@@ -169,20 +173,18 @@ footer {
 
 .help {
     display: none;
-    position: relative;
     background-color: #1F2716;
     min-width: 100%;
     z-index: 2;
-    margin-inline-start: 20%;
+    left: 0;
 }
 
 .links {
     display: none;
-    position: relative;
     background-color: #1F2716;
     min-width: 100%;
     z-index: 1;
-    margin-inline-start: 20%;
+    left: 0;
 }
 
 /*En class tilføjet med JS for at vise og skjule menuen*/
@@ -236,15 +238,16 @@ footer {
 #hoodieProdukter {
     width: 100%;
     height: 100%;
+    padding-top: 5%;
 }
 
 /*Container til billede*/
 .imgBox {
-    width: 50%;
-    margin-left: 20vw;
+    width: 80%;
     z-index: 2;
     font-family: inter;
     position: relative;
+    margin-inline-start: auto;
 }
 
 .colorMore {
@@ -253,24 +256,21 @@ footer {
     top: -50px;
     background-color: #1F2716;
     opacity: 80%;
-    width: 20%;
-    padding: 1%;
+    width: 30%;
+    height: 10%;
     border-radius: 30px; 
     text-align: center;
-    right: 0px;
 }
 
 .colorMoreA {
     color: white;
-    padding: 4%;
     text-decoration: none;
-    padding-left: 20%;
-    padding-right: 20%;
+    font-size: small;
 }
 
 .produktImg {
     align-self: center;
-    width: 70%;
+    width: 60%;
     height: 70%;
 }
 
@@ -306,3 +306,124 @@ footer {
     text-align: right;
 }
 /**/
+
+
+* {
+    box-sizing:border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.container {
+    position: relative;
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.cursor {
+    cursor: pointer;
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0%;
+}
+
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
