@@ -1,15 +1,17 @@
 body {
     height: 100%;
-    width: 100%;
+    max-width: 100vw;
 }
+.nav {
 
+}
 .navbar {
-    width: 100%;
+    max-width: 100vw;
     max-height: 10vh;
     height: 10vh;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    display: inline-block;
     left: 0%;
+    overflow: hidden;
 }
 
 .navbar img {
@@ -60,7 +62,9 @@ body {
 
 .showmenu {
     transform: translateX(9vw) translateY(8.09vh);
+    
 }
+
 
 .menu li: :last-child {
     border-bottom: none;
@@ -93,7 +97,6 @@ body {
         font-size: 16px;
     }
 }
-
 
 /*Footer farver, text og position*/
 footer {
@@ -254,7 +257,7 @@ footer {
     padding: 1%;
     border-radius: 30px; 
     text-align: center;
-    left: 0px;
+    right: 0px;
 }
 
 .colorMoreA {
@@ -267,6 +270,8 @@ footer {
 
 .produktImg {
     align-self: center;
+    width: 70%;
+    height: 70%;
 }
 
 /*Container til text*/
