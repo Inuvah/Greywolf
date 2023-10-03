@@ -1,111 +1,26 @@
 body {
-    height: 100%;
+    min-height: 100vh;
     max-width: 100vw;
+    font-family: inter;
 }
-.nav {
-
-}
-.navbar {
-    max-width: 100vw;
-    max-height: 10vh;
-    height: 10vh;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    left: 0%;
-    overflow: hidden;
-}
-
-.navbar img {
-    max-width: 20vw;
-    max-height: 20vh;
-    position: relative;
-    margin-top: 4vh;
-    margin-left: 2vw;
+html, body {
+    margin: 0%;
+    padding: 0%;
 }
 
 
-.container {
-    float: right;
-    height: 17px;
-    margin-right: 3%;
-    margin-top: 4vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.menulogo {
-    height: 3px;
-    width: 30px;
-    background-color: black;
-}
-
-.menu {
-    float: right;
-    width: 50%;
-    height: 60vh;
-    background-color: #1F2716;
-    padding: 25px;
-    transform: translateX(130%) translateY(8.09vh);
-    transition: 0.5s;
-}
-
-.menu li {
-    list-style-type: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    padding: 6px 0;
-    margin-bottom: 10px;
-    text-align: left;
-    font-family: mada;
-}
-
-.showmenu {
-    transform: translateX(9vw) translateY(8.09vh);
-    
-}
-
-
-.menu li: :last-child {
-    border-bottom: none;
-}
-
-.firstMenu {
-    margin-top: 4vh;
-}
-
-.menu li: :first-child a {
-    font-weight: bold;
-    
-}
-
-.menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    transition: font-weight 0.25;
-}
-
-@media screen and (min width: 1000px) {
-    .menu{
-        width: 500px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .menu li a{
-        font-size: 16px;
-    }
-}
 
 /*Footer farver, text og position*/
 footer {
     width: 100%;
     background-color: #1F2716;
-    bottom: 0%;
     display: inline-block;
-    position: absolute;
+    position: relative;
     left: 0%;
+    bottom: -100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 .foot ul {
@@ -117,6 +32,22 @@ footer {
     color: white;
 }
 
+
+.textOs {
+    border-top: 1px;
+    border-top-style: solid;
+    width: 80%;
+    margin-left: 10%;
+    font-family: inter;
+    text-align: left;
+}
+
+.forsideKvinde {
+    height: 30vh;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: -10px 0px 0px -10px;
+}
 @font-face {
     font-family: inter;
     src: url(Fonts/Inter-Regular.ttf);
@@ -140,27 +71,28 @@ footer {
     padding: 2%;
     border: none;
     cursor: pointer;
-    margin-inline-start: 35%;
     width: 30%;
+    display: flex;
+    margin-left: 40%;
 }
 
 /*container til footer*/
 .foot {
-    display: inline-block;
+    display: inline-block
 }
 
 /*container til kontakt info*/
 .kontakt {
     display: none;
-    position: relative;
     background-color: #1F2716;
     min-width: 100%;
     z-index: 3;
-    margin-inline-start: 20%;
+    left: 0;
 }
 
 /*Alle links i footer*/
 .foot a {
+    position: absolute;
     color: white;
     text-decoration: none;
     font-family: inter;
@@ -169,20 +101,18 @@ footer {
 
 .help {
     display: none;
-    position: relative;
     background-color: #1F2716;
     min-width: 100%;
     z-index: 2;
-    margin-inline-start: 20%;
+    left: 0;
 }
 
 .links {
     display: none;
-    position: relative;
     background-color: #1F2716;
     min-width: 100%;
     z-index: 1;
-    margin-inline-start: 20%;
+    left: 0;
 }
 
 /*En class tilføjet med JS for at vise og skjule menuen*/
@@ -196,6 +126,16 @@ footer {
     overflow: hidden;
     display: inline-flex;
     justify-content: center;
+    padding-top: 2px;
+}
+
+.popular {
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2px;
 }
 
 .scroll {
@@ -216,12 +156,19 @@ footer {
   
 .category img {
     border-radius: 20px;
-    margin-top: 10vh;
     margin-right: 7vw;
     margin-left: 7vw;
     margin-bottom: 0.1vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+.popular img {
+    border-radius: 10px;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    margin-bottom: 0.1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
 }
 
 .category p {
@@ -236,15 +183,16 @@ footer {
 #hoodieProdukter {
     width: 100%;
     height: 100%;
+    padding-top: 5%;
 }
 
 /*Container til billede*/
 .imgBox {
-    width: 50%;
-    margin-left: 20vw;
+    width: 80%;
     z-index: 2;
     font-family: inter;
     position: relative;
+    margin-inline-start: auto;
 }
 
 .colorMore {
@@ -253,24 +201,21 @@ footer {
     top: -50px;
     background-color: #1F2716;
     opacity: 80%;
-    width: 20%;
-    padding: 1%;
+    width: 30%;
+    height: 10%;
     border-radius: 30px; 
     text-align: center;
-    right: 0px;
 }
 
 .colorMoreA {
     color: white;
-    padding: 4%;
     text-decoration: none;
-    padding-left: 20%;
-    padding-right: 20%;
+    font-size: small;
 }
 
 .produktImg {
     align-self: center;
-    width: 70%;
+    width: 60%;
     height: 70%;
 }
 
@@ -306,3 +251,154 @@ footer {
     text-align: right;
 }
 /**/
+
+
+* {
+    box-sizing:border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.container {
+    position: relative;
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.cursor {
+    cursor: pointer;
+  }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0%;
+}
+
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* produkt side filter */
+.filterContainer {
+    overflow: hidden;
+}
+
+.showFilter {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }

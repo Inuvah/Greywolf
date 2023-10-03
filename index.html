@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <link rel="stylesheet" href="greywolf.css">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grey Wolf</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="greywolf.css">
 </head>
 <body>
+    <div class="topbody">
 <!--Header logo/navigation-->
     <header class="navbar">
         <nav>
@@ -18,28 +22,79 @@
                 <div class="menulogo"></div>
                 <div class="menulogo"></div>
 
+                <ul class="menu">
+                    <li class="firstMenu"><a href="#">Hjem</a></li>
+                    <li><a href="#">Bukser</a></li>
+                    <li><a href="#">T-shirts</T-shirts></a></li>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Vis alt</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Om os</a></li>
+                </ul>
             </div>
-            <ul class="menu">
-                <li class="firstMenu"><a href="#">Hjem</a></li>
-                <li><a href="#">Bukser</a></li>
-                <li><a href="#">T-shirts</T-shirts></a></li>
-                <li><a href="#">Hoodies</a></li>
-                <li><a href="#">Vis alt</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Om os</a></li>
-            </ul>
-    
     </nav>
        
     </header>
 
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/trisha-downing-pyud8ZaVq4I-unsplash.jpg" style="width:100%">
+      <div class="text">Bæredygtig</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/luis-quintero-3qqiMT2LdR8-unsplash.jpg" style="width:100%">
+      <div class="text">noget</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/HoodiesCat.png" style="width:50%">
+      <div class="text">ehhhm</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+</div>
+
     <!--Kategorier-->
+    <h1>Kategori</h1>
     <div class="category">
         <div class="scroll">
             <div><img src="img/HoodiesCat.png" alt=""><p>Hoodies</p></div>
             <div><img src="img/shirtsCat.png" alt=""><p>T-shirts</p></div>
             <div><img src="img/bukserCat.png" alt=""><p>Bukser</p></div>
         </div>
+    </div>
+
+    <h3>Mest populære</h3>
+    <div class="popular">
+        <div class="scroll">
+            <div><img src="img/t-shirts/black 1.png" alt=""></div>
+            <div><img src="img/t-shirts/white 1.png" alt=""></div>
+            <div><img src="img/hoodies/beige 1.png" alt=""></div>
+        </div>
+    </div>
+    <video controls width="100%" autoplay muted loop>
+        <source src="video/Gray wolf.mov">
+    </video>
+
+    <h1 style="margin-left: 10%;">Vores Koncept</h1>
+    <div class="textOs">
+        <p>I vores grønne modebevægelse fokuserer vi på at ændre måden, vi ser på tøj. Send os dit brugte tøj, og vi forvandler det til noget nyt og bæredygtigt.</p>    
+    </div>
+
+    <div class="forsideKvinde">
+    <img src="img/kvindesorttshirt.png" alt="forsideKvinde" style="width: 100%; margin: -45% 20% 20% 0%;">
     </div>
 
     <!--Footer kontakt og andet relevant info-->
