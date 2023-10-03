@@ -26,6 +26,8 @@ form h3 {
     color: #555;
     font-weight: 800;
     margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
 }
 
 form input, form textarea {
@@ -48,6 +50,6 @@ form button {
 }
 main {
     background-image: url(img/sortt-shirt.png);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
