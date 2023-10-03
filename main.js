@@ -3,25 +3,25 @@ var jsonObj = {"hoodies": [
     {
     title: '399 DKK',
     id: "1",
-    imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
+    imgUrl:'img/hoodies/beige 1.png',
     color:'Hoodie: Mørk beige',
 },
 {
     title: '399 DKK',
     id: "2",
-    imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
+    imgUrl:'img/hoodies/black 1.png',
     color:'Hoodie: Sort',
 },
 {
     title: '399 DKK',
     id: "3",
-    imgUrl:'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
+    imgUrl:'img/hoodies/white 1.png',
     color:'Hoodie: Hvid',
 },
 {
     title: '399 DKK',
     id: "4",
-    imgUrl:'',
+    imgUrl:'img/hoodies/grey 1.png',
     color:'Hoodie: Grå',
 },
 ]
