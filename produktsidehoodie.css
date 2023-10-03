@@ -8,6 +8,7 @@
 
 main {
     padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
 }
 
@@ -108,7 +109,7 @@ form button {
     font-size: 14px;
     align-items: center;
     border-radius: 25px;
-    width: 93%;
+    width: 100%;
     border: 0;
     outline: none;
 }
@@ -122,13 +123,13 @@ form button {
     font-size: 14px;
     align-items: center;
     border-radius: 25px;
-    width: 93%;
+    width: 100%;
     border: 1px solid black;
 }
 
 hr {
     color: #000;
-    width: 95%;
+    width: 100%;
     margin: 0%;
 }
 
@@ -160,28 +161,23 @@ hr {
 }
 
 
-
-
-
-
-
-
 /* IMAGE SLIDER */
 .container {
-    position: relative;
+    ;
 }
 
 .container .wrapper {
-    width: 100%;
-    height: 230px;
+    width: 93%;
+    height: 400px;
     margin: 5rem auto;
     overflow: auto;
+    
 }
 
 .container .wrapper-holder {
     display: grid;
     grid-template-columns: repeat(4, 100%);
-    height: 230px;
+    height: 100%;
     width: 100%;
     animation: slider 30s ease-in-out infinite
     alternate;
@@ -206,7 +202,7 @@ hr {
 }
 
 .container #slider-img-4 {
-    background-image: url();
+    background-image: url(img/green\ wood.png);
     background-position: center;
     background-size: cover;
 }
@@ -239,3 +235,5 @@ hr {
     90%{transform: translateX(0%);}
     100%{transform: translateX(0%);}
 }
+
+/* Billede slider styling slutter */
