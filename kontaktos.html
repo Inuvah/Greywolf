@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grey Wolf - Kontakt os</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="kontaktos.css">
+</head>
+<body>
+<!--Header logo/navigation-->
+    <header class="navbar">
+        <a class="logo" href="index.html">
+                <img src="img/endelige logo 2.png" alt="logo">
+        </a>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="navbar.html">Hjem</a> 
+                </li>
+                <li>
+                    <a href="produktside.css">Produkter</a> 
+                </li>
+                <li>
+                    <a href="kontaktos.html" class="active">Kontakt os</a> 
+                </li>
+                <li>
+                    <a href="">Om os</a> 
+                </li>
+                <li>
+                    <a href="">Log ind</a> 
+                </li>
+            </ul>
+        </nav>
+        <img src="img/indkøbskurv2.png" alt="kurvlogo">
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+<main>
+    <div class="container1">
+      <form> 
+        <h3>Kontakt formular</h3>
+
+          <input type="text" id="navn" placeholder="Dit fulde navn" required>
+          <input type="text" id="email" placeholder="Din email" required>
+          <input type="text" id="telefon" placeholder="Telefon nr." required>
+          <textarea id="besked" placeholder="Hvordan kan vi hjælpe dig?" style="height:200px"></textarea>
+          <button type ="submit">Send</button>
+      
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

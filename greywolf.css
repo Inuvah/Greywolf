@@ -1,6 +1,7 @@
 body {
     min-height: 100vh;
     max-width: 100vw;
+    font-family: Inter;
 }
 .nav {
 
@@ -66,7 +67,7 @@ body {
 }
 
 
-.menu li: :last-child {
+.menu li:last-child {
     border-bottom: none;
 }
 
@@ -74,7 +75,7 @@ body {
     margin-top: 4vh;
 }
 
-.menu li: :first-child a {
+.menu li:first-child a {
     font-weight: bold;
     
 }
@@ -86,7 +87,7 @@ body {
     transition: font-weight 0.25;
 }
 
-@media screen and (min width: 1000px) {
+@media screen and (min-width: 1000px) {
     .menu{
         width: 500px;
     }
@@ -304,6 +305,7 @@ footer {
 
 #sizes {
     text-align: right;
+<<<<<<< Updated upstream
 }
 /**/
 
@@ -426,4 +428,6 @@ footer {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+=======
+>>>>>>> Stashed changes
 }
