@@ -1,0 +1,138 @@
+.tshirt {
+    max-width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 0px;
+   display: block;
+}
+
+main {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: larger;
+    font-family: inter;   
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: medium;
+    padding-bottom: 15px;
+
+}
+
+
+.vælg-farve {
+padding-bottom: 3px;
+}
+
+h3 {
+    font-size: small;
+    padding-bottom: 30px;
+}
+
+    @font-face {
+        font-family: inter;
+        src: url(Fonts/Inter-Regular.ttf);
+    }
+
+.select-size span {
+display: inline-block;
+text-align: center;
+width: 40px;
+height: 40px;
+line-height: 40px;
+font-size: 14px;
+border: 1px solid #1F2716;
+border-radius: 10px;
+margin: 1px 5px 5px;
+}
+
+.select-size span:hover {
+    cursor: pointer;
+    background: #1F2716;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #1F2716;
+}
+
+.select-color span {
+    display: inline-block;
+    margin: 10px 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    cursor: pointer; 
+}
+
+.select-color span:hover {
+    cursor: pointer;
+    border: 2px solid #94a195
+}
+
+
+.color1 {
+    background: #1F2716;
+}
+
+.color2 {
+    background: #141414;
+}
+
+.color3 {
+    background: #878787;
+}
+
+.color4 {
+    background: #e6e6e6;
+}
+
+
+form button {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #94A195;
+    color: #fff;
+    font-size: 14px;
+   align-items: center;
+    border-radius: 25px;
+    width: 370px;
+    border: 0;
+    outline: none;
+}
+
+.lægikurv {
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+   align-items: center;
+    border-radius: 25px;
+    width: 370px;
+    border: 1px solid black;
+}
+
+.linje {
+    border-style: solid;
+    border-top: 0.5% color #000;
+    width: 93%;
+    margin-left: 5%;
+ 
+}
+
+hr {
+    color: #000;
+    width: 95%;
+    margin: 0%;
+}
