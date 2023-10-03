@@ -1,7 +1,11 @@
 body {
     min-height: 100vh;
     max-width: 100vw;
-    font-family: Inter;
+    font-family: inter;
+}
+html, body {
+    margin: 0%;
+    padding: 0%;
 }
 .nav {
 
@@ -67,7 +71,7 @@ body {
 }
 
 
-.menu li:last-child {
+.menu li: :last-child {
     border-bottom: none;
 }
 
@@ -75,7 +79,7 @@ body {
     margin-top: 4vh;
 }
 
-.menu li:first-child a {
+.menu li: :first-child a {
     font-weight: bold;
     
 }
@@ -87,7 +91,7 @@ body {
     transition: font-weight 0.25;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min width: 1000px) {
     .menu{
         width: 500px;
     }
@@ -97,6 +101,22 @@ body {
     .menu li a{
         font-size: 16px;
     }
+}
+
+.textOs {
+    border-top: 1px;
+    border-top-style: solid;
+    width: 80%;
+    margin-left: 10%;
+    font-family: inter;
+    text-align: left;
+}
+
+.forsideKvinde {
+    height: 30vh;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: -10px 0px 0px -10px;
 }
 
 /*Footer farver, text og position*/
@@ -199,6 +219,16 @@ footer {
     overflow: hidden;
     display: inline-flex;
     justify-content: center;
+    padding-top: 2px;
+}
+
+.popular {
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2px;
 }
 
 .scroll {
@@ -219,12 +249,19 @@ footer {
   
 .category img {
     border-radius: 20px;
-    margin-top: 10vh;
     margin-right: 7vw;
     margin-left: 7vw;
     margin-bottom: 0.1vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+.popular img {
+    border-radius: 10px;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    margin-bottom: 0.1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
 }
 
 .category p {
@@ -305,7 +342,6 @@ footer {
 
 #sizes {
     text-align: right;
-<<<<<<< Updated upstream
 }
 /**/
 
@@ -428,6 +464,4 @@ footer {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-=======
->>>>>>> Stashed changes
 }
