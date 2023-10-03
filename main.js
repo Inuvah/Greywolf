@@ -96,12 +96,10 @@ for(var i=0;i<count;i++){
     textBoxRight.appendChild(okologi);
     textBoxRight.appendChild(pris);
     textBoxLeft.appendChild(sizes);
-    
-
 }
 
 
-//filter
+//filter should work but ehm
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
