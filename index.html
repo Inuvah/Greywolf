@@ -8,33 +8,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="greywolf.css">
 </head>
 <body>
-    <div class="topbody">
 <!--Header logo/navigation-->
-    <header class="navbar">
-        <nav>
-                <a href="index.html"><img src="img/endelige logo 2.png" alt="logo"></a>
-            <div class="container">
-                <div class="menulogo"></div>
-                <div class="menulogo"></div>
-                <div class="menulogo"></div>
+<header class="navbar">
+    <a class="logo" href="navbar.html">
+            <img src="img/endelige logo 2.png" alt="logo">
+    </a>
 
-                <ul class="menu">
-                    <li class="firstMenu"><a href="#">Hjem</a></li>
-                    <li><a href="#">Bukser</a></li>
-                    <li><a href="#">T-shirts</T-shirts></a></li>
-                    <li><a href="#">Hoodies</a></li>
-                    <li><a href="#">Vis alt</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Om os</a></li>
-                </ul>
-            </div>
+    <a class="logo2" href="navbar.html">
+        <img src="img/indkøbskurv2.png" alt="kurvlogo">
+    </a>
+
+    <a class="logo2" href="navbar.html">
+        <img src="img/bæredygtgighed.png" alt="logo2">
+    </a>
+
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" class="active">Hjem</a> 
+            </li>
+            <li>
+                <a href="Produktside.html">Produkter</a> 
+            </li>
+            <li>
+                <a href="kontaktos.html">Kontakt os</a> 
+            </li>
+            <li>
+                <a href="">Om os</a> 
+            </li>
+            <li>
+                <a href="">Log ind</a> 
+            </li>
+        </ul>
     </nav>
-       
-    </header>
+
+    <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+</header>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -67,7 +85,7 @@
 </div>
 
     <!--Kategorier-->
-    <h1>Kategori</h1>
+    <h1 style="margin-left: 7%;">Kategori</h1>
     <div class="category">
         <div class="scroll">
             <div><img src="img/HoodiesCat.png" alt=""><p>Hoodies</p></div>
@@ -76,7 +94,7 @@
         </div>
     </div>
 
-    <h3>Mest populære</h3>
+    <h3 style="margin-left: 7%; margin-top: 5%;">Mest populære</h3>
     <div class="popular">
         <div class="scroll">
             <div><img src="img/t-shirts/black 1.png" alt=""></div>
@@ -88,7 +106,7 @@
         <source src="video/Gray wolf.mov">
     </video>
 
-    <h1 style="margin-left: 10%;">Vores Koncept</h1>
+    <h1 style="margin-left: 10%; margin-top: 5%;">Vores Koncept</h1>
     <div class="textOs">
         <p>I vores grønne modebevægelse fokuserer vi på at ændre måden, vi ser på tøj. Send os dit brugte tøj, og vi forvandler det til noget nyt og bæredygtigt.</p>    
     </div>
