@@ -32,13 +32,20 @@
                
             </header>
 
-
-    <div id="hoodieProdukter"></div>
-    <div id="t-shirtprodukter"></div>
-    <div id="bukserprodukter"></div>
-<script src="main.js"></script>
-<script src="shirts.js"></script>
-<script src="bukser.js"></script>
+            <div id="BtnFilter">
+                <button class="btn active" onclick="filterSelection('all')">Alle</button>
+                <button class="btn" onclick="filterSelection('hoodie')">Hoodies</button>
+                <button class="btn" onclick="filterSelection('t-shirts')">T-shirts</button>
+                <button class="btn" onclick="filterSelection('bukser')">Bukser</button>
+            </div>
+    <div class="filterContainer">
+        <div class="filterDiv hoodie" id="hoodieProdukter"></div>
+        <div class="filterDiv t-shirts" id="t-shirtprodukter"></div>
+        <div class="filterDiv bukser" id="bukserprodukter"></div>
+    </div>
+    <script src="main.js"></script>
+    <script src="shirts.js"></script>
+    <script src="bukser.js"></script>
 
 
 
