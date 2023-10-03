@@ -38,6 +38,8 @@ footer {
     border-top-style: solid;
     width: 80%;
     margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
     font-family: inter;
     text-align: left;
 }
@@ -127,6 +129,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     padding-top: 2px;
+    margin-bottom: 15%;
 }
 
 .popular {
@@ -136,6 +139,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding-top: 2px;
+    margin-bottom: 15%;
 }
 
 .scroll {
@@ -155,6 +159,7 @@ footer {
   }
   
 .category img {
+    width: 90%;
     border-radius: 20px;
     margin-right: 7vw;
     margin-left: 7vw;
@@ -176,6 +181,7 @@ footer {
     font-style: bold;
     text-align: center;
     font-weight: bold;
+    margin-left: 8vw;
 }
 
 /*produkt side*/

@@ -69,6 +69,7 @@ margin: 1px 5px 5px;
     width: 30px;
     height: 30px;
     border-radius: 15px;
+    margin-bottom: 30px;
     cursor: pointer; 
 }
 
@@ -95,11 +96,43 @@ margin: 1px 5px 5px;
 }
 
 
-.button {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 50px;
-    width: 200px;
+form button {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: #94A195;
-    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+   align-items: center;
+    border-radius: 25px;
+    width: 370px;
+    border: 0;
+    outline: none;
+}
+
+.lægikurv {
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+   align-items: center;
+    border-radius: 25px;
+    width: 370px;
+    border: 1px solid black;
+}
+
+.linje {
+    border-style: solid;
+    border-top: 0.5% color #000;
+    width: 93%;
+    margin-left: 5%;
+ 
+}
+
+hr {
+    color: #000;
+    width: 95%;
+    margin: 0%;
 }

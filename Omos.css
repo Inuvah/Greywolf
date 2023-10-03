@@ -46,16 +46,31 @@ h2 {
     
 }
 
-.Tekst1 {
-    margin: 15px;
+.Tekst1, .Tekst2, .Tekst3, .tekst4 {
+    margin: 25px;
 }
 
-.Tekst h3 {
+.Tekst1 h3, .Tekst3 h3, .tekst4 h3 {
     font-family: inter_bold;
 }
 
-.Tekst1 p {
-   font-family: inter_reg
+.Tekst1 p, .Tekst2, .Tekst3 p, .tekst4 p{
+   font-family: inter_reg;
+   font-size: small;
+}
+
+.korn, .bomuld {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.Reuse {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    margin-top: 10px;
 }
 
 @font-face {
