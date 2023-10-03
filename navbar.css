@@ -27,14 +27,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 100px 40px;
     border-radius: 0 0 10px 10px;
     margin: 0 auto;
 }
 
 .logo {
-    width: 200px;
+    width: 175px;
     padding-top: 30px;
+}
+
+.logo2 {
+    width: 20px;
+    padding-top: 5px;
+    padding: 0%;
 }
 
 nav .logo {
@@ -64,10 +70,6 @@ nav ul li a.active {
     color: white;
 }
 
-.kurvlogo {
-    width: 2px;
-}
-
 .hamburger {
     display: none;
     height: fit-content;
@@ -91,7 +93,7 @@ nav ul li a.active {
 @media only screen and (max-width: 1100px) {
     header {
         width: 90%;
-        padding: 0 20px;
+        padding: 100px 20px;
     }
     nav {
         position: absolute;

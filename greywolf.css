@@ -219,6 +219,16 @@ footer {
     overflow: hidden;
     display: inline-flex;
     justify-content: center;
+    padding-top: 2px;
+}
+
+.popular {
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2px;
 }
 
 .scroll {
@@ -239,12 +249,19 @@ footer {
   
 .category img {
     border-radius: 20px;
-    margin-top: 10vh;
     margin-right: 7vw;
     margin-left: 7vw;
     margin-bottom: 0.1vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+.popular img {
+    border-radius: 10px;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    margin-bottom: 0.1vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 90%;
 }
 
 .category p {
