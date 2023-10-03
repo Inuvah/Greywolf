@@ -1,6 +1,11 @@
 body {
     min-height: 100vh;
     max-width: 100vw;
+    font-family: inter;
+}
+html, body {
+    margin: 0%;
+    padding: 0%;
 }
 .nav {
 
@@ -96,6 +101,22 @@ body {
     .menu li a{
         font-size: 16px;
     }
+}
+
+.textOs {
+    border-top: 1px;
+    border-top-style: solid;
+    width: 80%;
+    margin-left: 10%;
+    font-family: inter;
+    text-align: left;
+}
+
+.forsideKvinde {
+    height: 30vh;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: -10px 0px 0px -10px;
 }
 
 /*Footer farver, text og position*/
