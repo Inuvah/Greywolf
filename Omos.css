@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    color: white;
+    font-size: xx-large;
+    margin-left: 30px;
+
+}
+
+.billedemedtekst {
+    width: 100%;
+
+}
+
+.søgefelt {
+    background-color: #d9d9d9;
+    color: #878787;
+    margin: 0% 10%;
+    width: 80%;
+    padding: 7px 0px;
+    border-radius: 15px;
+    font-size: small;
+    font-family: inter;
+
+}
+.søgefelt h3 {
+    margin-left: 12%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.søgeknap {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 12%;
+    top: 41%;
+    opacity: 0.6;
+    
+}
+
+.Tekst1 {
+    margin: 15px;
+}
+
+.Tekst h3 {
+    font-family: inter_bold;
+}
+
+.Tekst1 p {
+   font-family: inter_reg
+}
+
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: inter_reg;
+    src: url(Fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: inter_bold;
+    src: url(Fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: inter_semibold;
+    src: url(Fonts/Inter-SemiBold.ttf);
+}
