@@ -59,6 +59,7 @@
 
         <h2>Vælg størrelse</h2>
         <div class="select-size">
+            <span>XS</span>
             <span>S</span>
             <span>M</span>
             <span>L</span>
@@ -77,16 +78,74 @@
 
         <hr>
 
+
     <form>
-        <button class="lægikurv" type="lægikurv">Læg i kurv</button> 
+        <button class="lægikurv" type="lægikurv" onclick="openPopup()">Læg i kurv</button> 
+        <div class="popup" id="popup"> 
+            <img src="img/t-shirts/white 1.png" alt="tshirt">
+            <h2 class="produkt">Produktet er tilføjet til kurv</h2>
+
+           <h3 class="farve">Farve</h3>
+            <h4>Hvid</h4>
+            <h3 class="farve">Str:</h3>
+            <h4>S</h4>
+            
+            <button class="button" onclick="closePopup()">OK</button>
+
+            <script>
+                let popup= document.getElementById ("popup");
+        
+                function openPopup(){
+                    popup.classList.add("open-popup");
+                }
+        
+                function closePopup(){
+                    popup.classList.remove("open-popup");
+                }
+            </script>
+
+        </div>
+
+   
+
         <button type="købnu">Køb nu</button> 
+    
+
+
+
     </form>
 
-    <h2>Størrelsesguide</h2>
+    <p class="info">Grey Wolf's Økologiske Bomulds-T-shirt er den ultimative kombination 
+        af komfort og bæredygtighed. </p>
+    <p> Fremstillet med omhu af økologisk bomuld, skåner den miljøet 
+        ved at undgå skadelige kemikalier og sparer vandressourcer. </p>
+    <p>Denne T-shirt er din måde at udtrykke din stil med en ren samvittighed. Vælg Grey Wolf og omfavn bæredygtig mode i dag.</p>
+
+
     </main>
 
 
-    
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first" checked>
+            <label for="first">Størrelsesguide</label>
+            <div class="first">
+                <p>Vores fit er unisex, sammentidtigt med det økologisk og stillfuldt. </p>
+                <img class="størelse" src="img/størrelswesguide 2.png" alt="størrelsesguide">
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="levering">
+            <label for="levering">Levering</label>
+            <div class="first">
+                <p>Hos Gray wolf sender vi pakken samme dag, hvis den bliver bestilt før kl 15 i alle hverdage </p>
+            </div>
+        </li>
+        </ul>
+
+
+
+
 
 
       <!--Footer kontakt og andet relevant info-->
