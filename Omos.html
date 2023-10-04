@@ -4,20 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om os</title>
-    <link rel="stylesheet" href="Omos.css">
+    <link rel="stylesheet" href="omos.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
+
+    <header class="navbar">
+        <a class="logo" href="index.html">
+                <img src="img/endelige logo 2.png" alt="logo">
+        </a>
+    
+        <a class="logo2" href="kontaktos.html">
+            <img src="img/indkøbskurv2.png" alt="kurvlogo">
+        </a>
+    
+        <a class="logo2" href="omos.html">
+            <img src="img/bæredygtgighed.png" alt="logo2">
+        </a>
+    
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Hjem</a> 
+                </li>
+                <li>
+                    <a href="Produktside.html">Produkter</a> 
+                </li>
+                <li>
+                    <a href="kontaktos.html">Kontakt os</a> 
+                </li>
+                <li>
+                    <a href="omos.html">Om os</a> 
+                </li>
+                <li>
+                    <a href="">Log ind</a> 
+                </li>
+            </ul>
+        </nav>
+    
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
     <section>
         <p><img src="img/clark-street-mercantile-qnKhZJPKFD8-unsplash.jpg" alt="billedemedtekst" class="billedemedtekst">
         <h1></h1>
-        <h2>Om os /<br> Hvorfor er vi bæredygtige</h2>
+        <h2 class="btekst">Om os /<br> Hvorfor er vi bæredygtige</h2>
     </section>
     </p>
 
     <div class="søgefelt">
         <img src="img/magnifying-glass-solid.svg" alt="søgeknap" class="søgeknap">
-        <h3>Søgefelt</h3>
-
+        <input type="text" placeholder="Search..">
     </div>
 
     <section class="Tekst1">
