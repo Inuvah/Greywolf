@@ -1,4 +1,4 @@
-* {
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -19,6 +19,7 @@ form {
     padding: 2vw 4vw;
     width: 90%;
     max-width: 600px;
+    min-width: 350px;
     border-radius: 10px;
 }
 
@@ -49,7 +50,16 @@ form button {
 
 }
 main {
-    background-image: url(img/sortt-shirt.png);
     padding-top: 20px;
     padding-bottom: 20px;
+    background-image: url(img/sortt-shirt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section1 {
+    
+    align-items: center;
+    justify-content: space-between;
 }
