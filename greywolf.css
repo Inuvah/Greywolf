@@ -93,7 +93,7 @@ footer {
 
 /*Alle links i footer*/
 .foot a {
-    position: absolute;
+    position: relative;
     color: white;
     text-decoration: none;
     font-family: inter;
