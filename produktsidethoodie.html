@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grey Wolf - Hoodies</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="greywolf.css">
     <link rel="stylesheet" href="produktsidehoodie.css">
@@ -76,9 +82,12 @@
         </div>
     <!--Image slider slutter her-->
 
-        <h1 class="tøjtitel">Hoodie - Sandfarve</h1>
-            <p class="pris">399,00 kr<p class="moms">inkl. moms</p></p>
-
+    <!--'Vælg Størrelse og farve' starter her-->
+        <div>
+        <div class="bomuld"><img class="logo3" src="img/bæredygtgighed.png" alt="logo3">Bæredygtig</div>
+        <div class="tøjtitel">Grey Wolf - Hoodie basic</div>
+            <p class="pris">399,00 kr <span class="moms">inkl. moms</span></p>
+        </div>
         <h2>Vælg størrelse <a class="spørgsmål">(?)</a></h2>
         <div class="select-size">
             <span>S</span>
@@ -93,21 +102,65 @@
             <span class="color2"></span>
             <span class="color3"></span>
             <span class="color4"></span>
-
         </div>
-     
+        <!--'Vælg Størrelse og farve' slutter her-->
 
-        <hr>
-
+        <!--'køb knap' starter her-->
     <form>
         <button class="lægikurv" type="lægikurv">Læg i indkøbskurv</button> 
         <button type="købnu">Betal nu
             <img class="mobilepay" src="img/icons/MP_RGB_NoTM_Logo+Type Horisontal Blue.svg" alt="mobilepay">
         </button> 
     </form>
+        <!--'køb knap' slutter her-->
 
-    <h2>Størrelsesguide</h2>
-    </main>
+        <hr>
+
+        <!--'dropdown text box' starter her-->
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">Materiale og vaskeanvisning</label>
+            <div class="content">
+                <img class="logo4" src="img/bæredygtgighed.png" alt="logo3">
+                <div class="lineheightext"><p>Materiale: 100% økologisk bomuld</p>
+            </div>
+        </div>
+        </li>
+    <li>
+        <input type="radio" name="accordion" id="second">
+        <label for="second">Størrelsesguide</label>
+        <div class="content">
+            <div>
+                <img src="img/størrelswesguide 2.png" alt="guide">
+            </div>
+        </div> 
+    </li>
+<li>
+    <input type="radio" name="accordion" id="third">
+    <label for="third">Pasform</label>
+    <div class="content">
+        <div class="lineheightext"><p class="boldtext">Fit:</p> Regular fit</p><br>
+        <p class="boldtext">Længde</p> Normal længde</p><br>
+        <p class="boldtext">Ærmelængde</p> Med lange ærmer</p><br>
+        <p class="boldtext">Ærmelængde</p> 68 cm i størrelsen M</p><br>
+        <p class="boldtext">Samlet længde</p> 70 cm i størrelsen M</p>
+        </div>
+    </div> 
+</li>
+<li>
+    <input type="radio" name="accordion" id="fourth">
+    <label for="fourth">Bæredygtighed</label>
+    <div class="content">
+        <img class="logo4" src="img/icons/recycle.png" alt="logo3">
+        <div class="lineheightext"><p>Dette produkt anvender genbrugt materiale, der ellers ville ende som affald. Dette bidrager til at reducere efterspørgslen på råmaterialer og bevarelsen af naturresourcer.</p>
+        </div>
+    </div> 
+</li>
+</ul>
+<!--'dropdown text box' slutter her-->
+
+</main>
 
 
     

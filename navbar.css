@@ -81,7 +81,8 @@ nav ul li a.active {
     display: none;
     height: fit-content;
     cursor: pointer;
-    padding: 3px 8px;
+    padding-left: 15px;
+    padding-right: 0px ;
     border-radius: 5px;
     transition: 0.2s;
 }
@@ -99,7 +100,7 @@ nav ul li a.active {
 
 @media only screen and (max-width: 1100px) {
     header {
-        width: 90%;
+        width: 100%;
         padding: 30px 20px;
     }
     nav {
@@ -139,8 +140,4 @@ nav ul li a.active {
     .hamburger {
         display: block;
     }
-}
-
-main {
-
 }
