@@ -67,6 +67,11 @@ for(var i=0;i<count;i++){
     img.setAttribute('class', 'produktImg')
     img.src = obj.imgUrl;
 
+    //Link til produktside
+    const a = document.createElement('a');
+    a.setAttribute('class', 'produktLink');
+    a.href = "produktsidetshirt.html";
+
     //Alt text under produkt billederne bliver tilføjet som dele af tabelen
     const pris = document.createElement('td');
     pris.setAttribute('id', 'pris');
@@ -84,7 +89,8 @@ for(var i=0;i<count;i++){
 
     //container = div(hoodieProdukter). Tilføjer billeder osv som børn til denne div altså de ligger nu inde i min div box
     container.appendChild(imgBox);
-    imgBox.appendChild(img);
+    imgBox.appendChild(a);
+    a.appendChild(img);
     imgBox.appendChild(colorMore);
     colorMore.appendChild(colorMoreA);
     imgBox.appendChild(textBox);

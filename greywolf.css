@@ -121,7 +121,7 @@ footer {
     display: inline-block;
 }
 
-/*Katagorier forside*/
+/*Katagorier forside sliders*/
 .category {
     width: 100%;
     overflow: hidden;
@@ -224,7 +224,7 @@ footer {
     height: 70%;
 }
 
-/*Container til text*/
+/*Container til text under produkter*/
 .textBox {
 
 }
@@ -262,16 +262,15 @@ footer {
     box-sizing:border-box
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
+/* Carousel container */
 .container {
+    max-width: 1000px;
     position: relative;
+    margin: auto;
   }
+
+.container img {
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -288,7 +287,7 @@ footer {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -57px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -339,6 +338,10 @@ footer {
   bottom: 8px;
   width: 100%;
   text-align: center;
+}
+
+.row img {
+    
 }
 
 .row:after {
