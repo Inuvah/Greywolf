@@ -192,7 +192,7 @@ hr {
 }
 
 
-/* IMAGE SLIDER starter her */
+/* Billede SLIDER starter her */
 .container {
     margin-top: -50px;
     margin-left: -11px;
@@ -325,4 +325,4 @@ input[type="radio"] {
 .accordion input[type="radio"]:checked + label::before {
     content: '-';
 }
-/* Information, vaskeanvisning osv styling starter */
+/* Information, vaskeanvisning osv styling slutter */
