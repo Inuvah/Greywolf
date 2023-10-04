@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="kontaktos.css">
+    <link rel="stylesheet" href="greywolf.css">
 </head>
 <body>
 <!--Header logo/navigation-->
@@ -70,6 +71,44 @@
         </form>
     </div>
 </main>
+
+ <!--Footer kontakt og andet relevant info-->
+ <footer class="foot">
+
+    <!--Knap der kalder efter javascript for at vise og gemme info-->
+    <button onclick="kontaktFunction()" class="kontaktbtn">Kontakt</button>
+    <div class="kontakt" id="kontaktInfo">
+        <ul>
+            <li>Man-Fredag: 09:00-15:00</li>
+            <li>Weekend og Helligedage: Lukket</li>
+            <li><a href="mailto:greywolf@support.dk">Mail: greywolf@support.dk</a></li>
+            <li><a href="tel: +45330136781">Kontakt: +45330136781</a></li>
+            <li>Adresse: Løvbjergvej 11, 7100 Vejle</li>
+            <li>CVR: DK23070014</li>
+        </ul>
+    </div>
+
+    <button onclick="helpFunction()" class="helpbtn">Hjælp</button>
+    <div class="help" id="helpInfo">
+        <ul>
+            <li><a href="">Ombytning/retur</a></li>
+            <li><a href="">Handelsbetingelser</a></li>
+            <li><a href="">Privatlivspolitik</a></li>
+            <li><a href="">Fragt og levering</a></li>
+        </ul>
+    </div>
+
+    <button onclick="linkFunction()" class="linkbtn">Links</button>
+    <div class="links" id="linkInfo">
+        <ul>
+            <li><a href="">Bæredygtighed</a></li>
+            <li><a href="">Om os</a></li>
+            <li><a href="">Kontakt os</a></li>
+            <li><a href="">Support center</a></li>
+        </ul>
+    </div>
+    <script src="footer.js"></script>
+</footer>
 
 </body>
 </html>

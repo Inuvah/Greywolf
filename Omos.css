@@ -9,53 +9,68 @@ html, body {
     color: white;
     font-size: xx-large;
     margin-left: 25px;
+    text-shadow: 2px 2px grey;
 
 }
 
 .billedemedtekst {
     width: 100%;
+    height: 400px;
 }
 
+
+/* Søge knappen starter */
 .søgefelt {
-    display: inline-block; 
-    margin-left: 8%;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.søgefelt img {
-    margin-top: 3%;
-    margin-left: 2%;
-    position: relative;
-    float: left;
-    padding-left: 1px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    height: 30px;
+.søgebar {
+    width: 100%;
+    max-width: 340px;
+    background: rgba(40, 40, 40, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 6px 18px;
+    backdrop-filter: blur(4px) saturate(100%);
 }
 
-.søgefelt input[type=text] {
-    padding: 4px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    width: 73%;
-    float: right;
+.søgebar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 15;
+    color: rgb(46, 46, 46);
+    font-size: 15px;
 }
 
-
-.søgeknap {
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    left: 12%;
-    top: 41%;
-    opacity: 0.6;
-    
+::placeholder {
+    color: rgb(125, 125, 125)
 }
+
+.søgebar button {
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: none;
+}
+
+.søgeikon {
+    width: 25px;
+    height: 25px;
+}
+/* Søge knappen slutter */
+
 
 .Tekst1, .Tekst2, .Tekst3, .tekst4 {
     margin: 25px;

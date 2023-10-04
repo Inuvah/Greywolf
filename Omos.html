@@ -27,7 +27,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="active">Hjem</a> 
+                    <a href="index.html">Hjem</a> 
                 </li>
                 <li>
                     <a href="Produktside.html">Produkter</a> 
@@ -36,10 +36,10 @@
                     <a href="kontaktos.html">Kontakt os</a> 
                 </li>
                 <li>
-                    <a href="omos.html">Om os</a> 
+                    <a href="omos.html" class="active">Om os</a> 
                 </li>
                 <li>
-                    <a href="">Log ind</a> 
+                    <a href="">Log ind</a>
                 </li>
             </ul>
         </nav>
@@ -59,8 +59,10 @@
     </p>
 
     <div class="søgefelt">
-        <img src="img/magnifying-glass-solid.svg" alt="søgeknap" class="søgeknap">
-        <input type="text" placeholder="Search..">
+        <form action="https://www.google.com/search" class="søgebar" method="get" class="søgebar">
+        <input type="text" placeholder="Søgefelt" name="q">
+        <button type="submit"><img class="søgeikon" src="img/icons/search.svg" alt=""></button> 
+        </form>
     </div>
 
     <section class="Tekst1">

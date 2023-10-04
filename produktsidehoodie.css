@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-
-
 
 main {
     padding-left: 20px;
@@ -150,6 +147,7 @@ hr {
 .logo4 {
     width: 40px;
     margin-right: 0px;
+    align-items: center;
 } 
 
 .pris {
@@ -180,30 +178,23 @@ hr {
     height: 70px;
     margin: -30px;
     margin-left: 25px;
-}
-
-.boldtext {
-    font-weight: 600;
-}
-
-.lineheightext {
-    line-height: 1,5;
-    font-size: smaller;
+    
 }
 
 
 /* Billede SLIDER starter her */
 .container {
-    margin-top: -50px;
-    margin-left: -11px;
-    margin-right: -11px;
+    margin-top: -70px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .container .wrapper {
-    width: 93%;
+    width: 100%;
     height: 400px;
     margin: 5rem auto;
     overflow: auto;
+    align-items: center;
     
 }
 
@@ -272,6 +263,15 @@ hr {
 
 
 /* Information, vaskeanvisning osv styling starter */
+.boldtext {
+    font-weight: 600;
+}
+
+.lineheightext {
+    line-height: 1,5;
+    font-size: smaller;
+}
+
 .accordion {
     margin: 15px auto;
     width: 100%;

@@ -1,6 +1,6 @@
 body {
     max-width: 100vw;
-    font-family: inter;
+    font-family: "Inter";
 }
 html, body {
     margin: 0%;
@@ -22,28 +22,6 @@ html, body {
     src: url(Fonts/Mada-Regular.ttf)
 }
 
-/*Footer farver, text og position*/
-footer {
-    width: 100%;
-    background-color: #1F2716;
-    display: inline-block;
-    position: relative;
-    left: 0%;
-    bottom: -100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    text-align: center;
-}
-
-.foot ul {
-    list-style-type: none;
-    font-family: inter;
-}
-
-.foot li {
-    color: white;
-}
-
 
 .textOs {
     border-top: 1px;
@@ -63,56 +41,82 @@ footer {
     object-position: -10px 0px 0px -10px;
 }
 
-/*Footer dropmenu*/
+
+
+
+
+
+
+/*Footer farver, text og position*/
+footer {
+    width: 100%;
+    background-color: #1F2716;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: -100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.foot ul {
+    color: white;
+    line-height: 2;
+    font-size: smaller;
+
+}
+
+.foot li {
+    color: white;
+}
+
+.foot a {
+    color: white;
+}
+
 .foot button {
     background-color: #1F2716;
     color: white;
-    padding: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: none;
     cursor: pointer;
-    width: 30%;
-    display: flex;
-    margin-left: 40%;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-/*container til footer*/
 .foot {
     display: inline-block
-}
+} 
 
-/*container til kontakt info*/
 .kontakt {
     display: none;
-    background-color: #1F2716;
     min-width: 100%;
-    z-index: 3;
     left: 0;
-}
-
-/*Alle links i footer*/
-.foot a {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    font-family: inter;
-    display: block;
 }
 
 .help {
     display: none;
-    background-color: #1F2716;
     min-width: 100%;
-    z-index: 2;
     left: 0;
 }
 
 .links {
     display: none;
-    background-color: #1F2716;
     min-width: 100%;
-    z-index: 1;
     left: 0;
 }
+
+
+
+
+
+
+
+
+
 
 /*En class tilføjet med JS for at vise og skjule menuen*/
 .show {
@@ -222,18 +226,14 @@ footer {
     height: 70%;
 }
 
-/*Container til text under produkter*/
-.textBox {
 
-}
+
+
+/*Container til text under produkter*/
 
 /*Table for at nemt bestemme text position*/
 .textBox table {
     width: 100%;
-}
-
-.textBox table, th, td {
-
 }
 
 /*Text under produkt*/ 
@@ -266,9 +266,6 @@ footer {
     position: relative;
     margin: auto;
   }
-
-.container img {
-}
 
 /* Hide the images by default */
 .mySlides {
@@ -336,10 +333,6 @@ footer {
   bottom: 8px;
   width: 100%;
   text-align: center;
-}
-
-.row img {
-    
 }
 
 .row:after {
