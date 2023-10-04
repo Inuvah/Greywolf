@@ -7,7 +7,20 @@ html, body {
     padding: 0%;
 }
 
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-Regular.ttf);
+}
 
+@font-face {
+    font-family: shree;
+    src: url(Fonts/shreedev0714-bold-italic-webfont.ttf);
+}
+
+@font-face {
+    font-family: mada;
+    src: url(Fonts/Mada-Regular.ttf)
+}
 
 /*Footer farver, text og position*/
 footer {
@@ -49,21 +62,6 @@ footer {
     object-fit: cover;
     object-position: -10px 0px 0px -10px;
 }
-@font-face {
-    font-family: inter;
-    src: url(Fonts/Inter-Regular.ttf);
-}
-
-@font-face {
-    font-family: shree;
-    src: url(Fonts/shreedev0714-bold-italic-webfont.ttf);
-}
-
-@font-face {
-    font-family: mada;
-    src: url(Fonts/Mada-Regular.ttf)
-}
-
 
 /*Footer dropmenu*/
 .foot button {
