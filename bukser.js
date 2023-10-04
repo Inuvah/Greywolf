@@ -67,6 +67,10 @@ for(var i=0;i<count;i++){
     img.setAttribute('class', 'produktImg')
     img.src = obj.imgUrl;
 
+    const a = document.createElement('a');
+    a.setAttribute('class', 'produktLink')
+    a.href = "";
+
     //Alt text under produkt billederne bliver tilføjet som dele af tabelen
     const pris = document.createElement('td');
     pris.setAttribute('id', 'pris');

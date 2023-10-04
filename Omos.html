@@ -4,20 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om os</title>
-    <link rel="stylesheet" href="Omos.css">
+    <link rel="stylesheet" href="omos.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="greywolf.css">
 </head>
 <body>
+
+    <header class="navbar">
+        <a class="logo" href="index.html">
+                <img src="img/endelige logo 2.png" alt="logo">
+        </a>
+    
+        <a class="logo2" href="kontaktos.html">
+            <img src="img/indkøbskurv2.png" alt="kurvlogo">
+        </a>
+    
+        <a class="logo2" href="omos.html">
+            <img src="img/bæredygtgighed.png" alt="logo2">
+        </a>
+    
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Hjem</a> 
+                </li>
+                <li>
+                    <a href="Produktside.html">Produkter</a> 
+                </li>
+                <li>
+                    <a href="kontaktos.html">Kontakt os</a> 
+                </li>
+                <li>
+                    <a href="omos.html">Om os</a> 
+                </li>
+                <li>
+                    <a href="">Log ind</a> 
+                </li>
+            </ul>
+        </nav>
+    
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+
     <section>
         <p><img src="img/clark-street-mercantile-qnKhZJPKFD8-unsplash.jpg" alt="billedemedtekst" class="billedemedtekst">
         <h1></h1>
-        <h2>Om os /<br> Hvorfor er vi bæredygtige</h2>
+        <h2 class="btekst">Om os /<br> Hvorfor er vi bæredygtige</h2>
     </section>
     </p>
 
     <div class="søgefelt">
         <img src="img/magnifying-glass-solid.svg" alt="søgeknap" class="søgeknap">
-        <h3>Søgefelt</h3>
-
+        <input type="text" placeholder="Search..">
     </div>
 
     <section class="Tekst1">
@@ -55,5 +98,42 @@
         <h3>100% økologisk bomuld</h3>
         <p>Bomuld er 100% naturligt materiale som er et genanvendeligt og miljøvenligt fiber, som gror på marker uden nogen former for kemiske processer for at blive omdannet til tekstil.</p>
     </section>
+
+
+    <!--Footer kontakt og andet relevant info-->
+    <footer class="foot">
+        <!--Knap der kalder efter javascript for at vise og gemme info-->
+        <button onclick="kontaktFunction()" class="kontaktbtn">Kontakt</button>
+        <div class="kontakt" id="kontaktInfo">
+            <ul>
+                <li>Man-fredag: 09:00-15:00</li>
+                <li><a href="mailto:greywolf@support.dk">Mail: greywolf@support.dk</a></li>
+                <li><a href="tel: +45330136781">Kontakt: +45330136781</a></li>
+                <li>CVR: DK23070014</li>
+                <li>Adresse: Løvbjergvej 11, 7100 Vejle</li>
+            </ul>
+        </div>
+
+        <button onclick="helpFunction()" class="helpbtn">Hjælp</button>
+        <div class="help" id="helpInfo">
+            <ul>
+                <li><a href="">Ombytning/retur</a></li>
+                <li><a href="">Handelsbetingelser</a></li>
+                <li><a href="">Privatlivspolitik</a></li>
+                <li><a href="">Fragt og levering</a></li>
+            </ul>
+        </div>
+
+        <button onclick="linkFunction()" class="linkbtn">Links</button>
+        <div class="links" id="linkInfo">
+            <ul>
+                <li><a href="">Bæredygtighed</a></li>
+                <li><a href="">Om os</a></li>
+                <li><a href="">Kontakt os</a></li>
+                <li><a href="">Support center</a></li>
+            </ul>
+        </div>
+        <script src="footer.js"></script>
+    </footer>
 </body>
 </html>

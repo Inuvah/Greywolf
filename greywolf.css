@@ -1,5 +1,4 @@
 body {
-    min-height: 100vh;
     max-width: 100vw;
     font-family: inter;
 }
@@ -8,7 +7,20 @@ html, body {
     padding: 0%;
 }
 
+@font-face {
+    font-family: inter;
+    src: url(Fonts/Inter-Regular.ttf);
+}
 
+@font-face {
+    font-family: shree;
+    src: url(Fonts/shreedev0714-bold-italic-webfont.ttf);
+}
+
+@font-face {
+    font-family: mada;
+    src: url(Fonts/Mada-Regular.ttf)
+}
 
 /*Footer farver, text og position*/
 footer {
@@ -50,21 +62,6 @@ footer {
     object-fit: cover;
     object-position: -10px 0px 0px -10px;
 }
-@font-face {
-    font-family: inter;
-    src: url(Fonts/Inter-Regular.ttf);
-}
-
-@font-face {
-    font-family: shree;
-    src: url(Fonts/shreedev0714-bold-italic-webfont.ttf);
-}
-
-@font-face {
-    font-family: mada;
-    src: url(Fonts/Mada-Regular.ttf)
-}
-
 
 /*Footer dropmenu*/
 .foot button {
@@ -94,7 +91,7 @@ footer {
 
 /*Alle links i footer*/
 .foot a {
-    position: absolute;
+    position: relative;
     color: white;
     text-decoration: none;
     font-family: inter;
@@ -122,7 +119,7 @@ footer {
     display: inline-block;
 }
 
-/*Katagorier forside*/
+/*Katagorier forside sliders*/
 .category {
     width: 100%;
     overflow: hidden;
@@ -225,7 +222,7 @@ footer {
     height: 70%;
 }
 
-/*Container til text*/
+/*Container til text under produkter*/
 .textBox {
 
 }
@@ -263,16 +260,15 @@ footer {
     box-sizing:border-box
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
+/* Carousel container */
 .container {
+    max-width: 1000px;
     position: relative;
+    margin: auto;
   }
+
+.container img {
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -289,7 +285,7 @@ footer {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -57px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -342,13 +338,8 @@ footer {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.row img {
+    
 }
 
 .row:after {

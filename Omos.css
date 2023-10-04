@@ -3,38 +3,49 @@ html, body {
     padding: 0;
 }
 
-h2 {
-    width: 100%;
+.btekst {
     position: absolute;
-    top: 60px;
+    top: 25%;
     color: white;
     font-size: xx-large;
-    margin-left: 30px;
+    margin-left: 25px;
 
 }
 
 .billedemedtekst {
     width: 100%;
-
 }
 
 .søgefelt {
-    background-color: #d9d9d9;
-    color: #878787;
-    margin: 0% 10%;
-    width: 80%;
-    padding: 7px 0px;
-    border-radius: 15px;
-    font-size: small;
-    font-family: inter;
+    display: inline-block; 
+    margin-left: 8%;
+}
 
+.søgefelt img {
+    margin-top: 3%;
+    margin-left: 2%;
+    position: relative;
+    float: left;
+    padding-left: 1px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    height: 30px;
 }
-.søgefelt h3 {
-    margin-left: 12%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 10px;
+
+.søgefelt input[type=text] {
+    padding: 4px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 73%;
+    float: right;
 }
+
 
 .søgeknap {
     height: 20px;
