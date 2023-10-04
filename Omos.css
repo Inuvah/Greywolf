@@ -4,7 +4,6 @@ html, body {
 }
 
 .btekst {
-    width: 100%;
     position: absolute;
     top: 25%;
     color: white;
