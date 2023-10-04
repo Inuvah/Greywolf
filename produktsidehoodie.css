@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+
+
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tøjtitel {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: larger;
+    font-family: "Inter";
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: small;
+    margin-bottom: 15px;
+
+}
+
+h6 {
+    font-size: small;
+    padding-bottom: 15px;
+
+}
+
+div.bomuld {
+    padding-bottom: 5px;
+    font-size: small;
+    margin-top: -50px;
+}
+
+h3 {
+    font-size: small;
+}
+
+    @font-face {
+        font-family: "Inter";
+        src: url(Fonts/Inter-Regular.ttf);
+    }
+
+.select-size span {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border: 1px solid #1F2716;
+    border-radius: 10px;
+    margin: 1px 5px 5px;
+}
+
+.select-size span:hover {
+    cursor: pointer;
+    background: #1F2716;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #1F2716;
+}
+
+.select-color {
+    margin: 0;
+    margin-top: -11px;
+}
+
+.select-color span {
+    display: inline-block;
+    margin: 10px 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.select-color span:hover {
+    cursor: pointer;
+    border: 2px solid #000000
+}
+
+
+.color1 {
+    background: #f8d7af;
+}
+
+.color2 {
+    background: #141414;
+}
+
+.color3 {
+    background: #878787;
+}
+
+.color4 {
+    background: #e6e6e6;
+}
+
+form button {
+    padding: 15px;
+    margin-bottom: 35px;
+    background-color: #94A195;
+    color: #fff;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: 600;
+    border: 0;
+    outline: none;
+}
+
+.lægikurv {
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+hr {
+    color: #000;
+    width: 100%;
+    margin: 0%;
+}
+
+.logo3 {
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 2px;
+} 
+
+.logo4 {
+    width: 40px;
+    margin-right: 0px;
+} 
+
+.pris {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.tøjtitel {
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+
+.moms {
+    font-size: small;
+    margin-bottom: 50px;
+    color: #3c433d;
+}
+
+.spørgsmål {
+    font-size: smaller;
+}
+
+.mobilepay {
+    width: 70px;
+    height: 70px;
+    margin: -30px;
+    margin-left: 25px;
+}
+
+.boldtext {
+    font-weight: 600;
+}
+
+.lineheightext {
+    line-height: 1,5;
+    font-size: smaller;
+}
+
+
+/* IMAGE SLIDER starter her */
+.container {
+    margin-top: -50px;
+    margin-left: -11px;
+    margin-right: -11px;
+}
+
+.container .wrapper {
+    width: 93%;
+    height: 400px;
+    margin: 5rem auto;
+    overflow: auto;
+    
+}
+
+.container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite
+    alternate;
+}
+
+.container #slider-img-1 {
+    background-image: url(img/Hoodies/beige\ 1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img-2 {
+    background-image: url(img/Hoodies/beige\ 2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img-3 {
+    background-image: url(img/Hoodies/beige\ 3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img-4 {
+    background-image: url(img/green\ wood.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.container .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+@keyframes slider {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+/* Billede slider styling slutter */
+
+
+/* Information, vaskeanvisning osv styling starter */
+.accordion {
+    margin: 15px auto;
+    width: 100%;
+}
+
+.accordion li {
+    list-style: none;
+    align-items: center;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion li label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 18;
+    font-weight: 300;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    color: black;
+    padding: 0 10px;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+}
+/* Information, vaskeanvisning osv styling starter */
