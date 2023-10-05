@@ -494,20 +494,21 @@ footer {
 
 /* Carousel container */
 .container {
-    max-width: 1000px;
     position: relative;
     margin: auto;
+    height: 450px;
   }
 
 .container img {
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 443px;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+
 }
 
 .cursor {
