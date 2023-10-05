@@ -409,33 +409,36 @@ footer {
 }
 
 /*produkt side*/
+
+/*bæredygtig logo*/
+.dygtig {
+    background-image: url(img/bæredygtgighed.png);
+}
+
 /*Container til hvert produkt laver flere med js*/
 #hoodieProdukter {
     width: 100%;
     height: 100%;
-    padding-top: 5%;
 }
 
 /*Container til billede*/
 .imgBox {
     width: 100%;
-    text-align: center;
-    z-index: 2;
-    font-family: inter;
-    position: relative;
-    margin-inline-start: auto;
+    height: 390px;
+    font-family: "Inter";
 }
 
 .colorMore {
-    z-index: 1;
     position: relative;
+    padding: 5px;
     top: -50px;
+    left: 260px;
     background-color: #1F2716;
-    opacity: 80%;
     width: 30%;
-    height: 10%;
+    height: 30px;
     border-radius: 30px; 
     text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.10), 0 5px 10px 0 rgba(0,0,0,0.10);
 }
 
 .colorMoreA {
@@ -453,19 +456,26 @@ footer {
 /*Container til text under produkter*/
 
 /*Table for at nemt bestemme text position*/
+.textBox {
+    position: relative;
+    margin: auto;
+    top: -15px;
+    
+}
+
 .textBox table {
     width: 100%;
-    text-align: center;
 }
 
 /*Text under produkt*/ 
-#pris {
-    text-align: right;
-}
-
 #farve {
     text-align: left;
     font-weight: bolder;
+}
+
+#pris {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #okologi {

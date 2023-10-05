@@ -1,25 +1,25 @@
 //Array liste af info om hoodie produkter
 var jsonObj = {"hoodies": [
     {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "1",
     imgUrl:'img/hoodies/beige 1.png',
     color:'Hoodie: Mørk beige',
 },
 {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "2",
     imgUrl:'img/hoodies/black 1.png',
     color:'Hoodie: Sort',
 },
 {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "3",
     imgUrl:'img/hoodies/white 1.png',
     color:'Hoodie: Hvid',
 },
 {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "4",
     imgUrl:'img/hoodies/grey 1.png',
     color:'Hoodie: Grå',
@@ -69,7 +69,7 @@ for(var i=0;i<count;i++){
 
     //Link til produktside
     const a = document.createElement('a');
-    a.href = "produktsidethoodie.html";
+    a.href = "produktsidehoodie.html";
 
     //Alt text under produkt billederne bliver tilføjet som dele af tabelen
     const pris = document.createElement('td');
@@ -81,10 +81,12 @@ for(var i=0;i<count;i++){
     farve.textContent += color;
 
     const okologi = document.createElement('td');
+    okologi.setAttribute('id', 'okologi');
     okologi.textContent += "100% økologisk bomuld";
 
     const sizes = document.createElement('td');
-    sizes.textContent += "XS  |  S  |  M  |  L  |  XL";
+    sizes.setAttribute('id', 'sizes');
+    sizes.textContent += "| S | M | L | XL |";
 
     //container = div(hoodieProdukter). Tilføjer billeder osv som børn til denne div altså de ligger nu inde i min div box
     container.appendChild(imgBox);
