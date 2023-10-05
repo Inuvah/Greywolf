@@ -406,6 +406,7 @@ footer {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    padding-top: 15%;
   }
 
 /* Hide the images by default */
@@ -423,7 +424,7 @@ footer {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -57px;
+  margin-top: -35px;
   padding: 16px;
   color: white;
   font-weight: bold;
