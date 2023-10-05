@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-
 
 
 main {
@@ -37,7 +35,7 @@ h6 {
 div.bomuld {
     padding-bottom: 5px;
     font-size: small;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 h3 {
@@ -49,6 +47,10 @@ h3 {
         src: url(Fonts/Inter-Regular.ttf);
     }
 
+
+
+
+/* Størrelse og farve valg starter */
 .select-size span {
     display: inline-block;
     text-align: center;
@@ -69,6 +71,11 @@ h3 {
     border: 1px solid #1F2716;
 }
 
+.select-color {
+    margin: 0;
+    margin-top: -11px;
+}
+
 .select-color span {
     display: inline-block;
     margin: 10px 3px;
@@ -76,30 +83,32 @@ h3 {
     height: 30px;
     border-radius: 15px;
     margin-bottom: 30px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .select-color span:hover {
     cursor: pointer;
-    border: 2px solid #94a195
+    border: 2px solid #000000
 }
 
 
 .color1 {
-    background: #1F2716;
+    background: #e0e0e0;
 }
 
 .color2 {
-    background: #141414;
+    background: #676767;
 }
 
 .color3 {
-    background: #878787;
+    background: #151515;
 }
 
 .color4 {
-    background: #e6e6e6;
+    background: #3e5340;
 }
+/* Størrelse og farve valg slutter */
+
 
 form button {
     padding: 15px;
@@ -144,6 +153,7 @@ hr {
 .logo4 {
     width: 40px;
     margin-right: 0px;
+    align-items: center;
 } 
 
 .pris {
@@ -174,8 +184,11 @@ hr {
     height: 70px;
     margin: -30px;
     margin-left: 25px;
+    
 }
 
+
+/* Information, vaskeanvisning osv styling starter */
 .boldtext {
     font-weight: 600;
 }
@@ -185,87 +198,6 @@ hr {
     font-size: smaller;
 }
 
-
-/* IMAGE SLIDER starter her */
-.container {
-    margin-top: -50px;
-    margin-left: -11px;
-    margin-right: -11px;
-}
-
-.container .wrapper {
-    width: 93%;
-    height: 400px;
-    margin: 5rem auto;
-    overflow: auto;
-    
-}
-
-.container .wrapper-holder {
-    display: grid;
-    grid-template-columns: repeat(4, 100%);
-    height: 100%;
-    width: 100%;
-    animation: slider 30s ease-in-out infinite
-    alternate;
-}
-
-.container #slider-img-1 {
-    background-image: url(img/t-shirts/white\ 1.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.container #slider-img-2 {
-    background-image: url(img/luis-quintero-3qqiMT2LdR8-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.container #slider-img-3 {
-    background-image: url(img/sortt-shirt.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.container #slider-img-4 {
-    background-image: url(img/kvindesorttshirt.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.container .button-holder .button {
-    background-color: white;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    display: inline-block;
-    margin: .3rem;
-}
-
-.container .button-holder {
-    position: absolute;
-    left: 45%;
-    bottom: 0%;
-}
-
-@keyframes slider {
-    0%{transform: translateX(0%);}
-    10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}
-    60%{transform: translateX(-300%);}
-    70%{transform: translateX(-300%);}
-    80%{transform: translateX(-300%);}
-    90%{transform: translateX(0%);}
-    100%{transform: translateX(0%);}
-}
-/* Billede slider styling slutter */
-
-
-/* Information, vaskeanvisning osv styling starter */
 .accordion {
     margin: 15px auto;
     width: 100%;
@@ -319,6 +251,58 @@ input[type="radio"] {
 .accordion input[type="radio"]:checked + label::before {
     content: '-';
 }
-/* Information, vaskeanvisning osv styling starter */
+/* Information, vaskeanvisning osv styling slutter */
 
 
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -57px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0%;
+}
+
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
