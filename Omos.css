@@ -20,18 +20,18 @@ html, body {
 
 
 /* Søge knappen starter */
-.søgefelt {
-    padding: 18px 20px;
+.søgefeltomos {
+    padding: 20px;
     margin-bottom: 30px;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -175px;
+    margin-top: 5px;
 }
 
-.søgebar {
+.søgebaromos {
     width: 100%;
     max-width: 340px;
     background: rgba(40, 40, 40, 0.2);
@@ -42,7 +42,7 @@ html, body {
     backdrop-filter: blur(4px) saturate(100%);
 }
 
-.søgebar input {
+.søgebaromos input {
     background: transparent;
     flex: 1;
     border: 0;
@@ -57,7 +57,7 @@ html, body {
     color: rgba(115, 115, 115, 0.8)
 }
 
-.søgebar button {
+.søgebaromos button {
     border: 0;
     border-radius: 50%;
     width: 35px;
