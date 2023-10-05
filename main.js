@@ -103,7 +103,7 @@ for(var i=0;i<count;i++){
     textBoxLeft.appendChild(sizes);
 }
 
-
+//ignore ignore ignore ignore ignore ignore ignore ignore ignore ignore 
 //filter should work but ehm
 filterSelection("all")
 function filterSelection(c) {
