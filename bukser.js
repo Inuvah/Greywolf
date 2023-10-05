@@ -1,25 +1,25 @@
 //Array liste af info om hoodie produkter
 var jsonObj = {"bukser": [
     {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "1",
     imgUrl:'img/brown 1.png',
     color:'Bukser: Mørk beige',
 },
 {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "2",
     imgUrl:'img/black 1.png',
     color:'Bukser: Sort',
 },
 {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "3",
     imgUrl:'img/white 1.png',
     color:'Bukser: Hvid',
 },
 {
-    title: '399 DKK',
+    title: '399,00 kr',
     id: "4",
     imgUrl:'img/grey 1.png',
     color:'Bukser: Grå',
@@ -84,7 +84,7 @@ for(var i=0;i<count;i++){
     okologi.textContent += "100% økologisk bomuld";
 
     const sizes = document.createElement('td');
-    sizes.textContent += "XS  |  S  |  M  |  L  |  XL";
+    sizes.textContent += "| S | M | L | XL |";
 
     //container = div(hoodieProdukter). Tilføjer billeder osv som børn til denne div altså de ligger nu inde i min div box
     container.appendChild(imgBox);
