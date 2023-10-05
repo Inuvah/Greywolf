@@ -57,7 +57,58 @@ html, body {
 /* Footer farver, text og position slutter her */
 
 
+/* Søge knappen starter */
+.søgefelt {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+}
 
+.søgebar {
+    width: 100%;
+    max-width: 340px;
+    background: rgba(40, 40, 40, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 6px 18px;
+    backdrop-filter: blur(4px) saturate(100%);
+}
+
+.søgebar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 15;
+    color: rgb(46, 46, 46);
+    font-size: 15px;
+}
+
+::placeholder {
+    color: rgba(115, 115, 115, 0.8)
+}
+
+.søgebar button {
+    border: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: none;
+}
+
+.søgeikon {
+    width: 25px;
+    height: 25px;
+}
+/* Søge knappen slutter */
 
 
 /* Footer farver, text og position starter her */
@@ -106,7 +157,7 @@ footer {
     display: none;
     min-width: 100%;
     left: 0;
-    background-color: #384628;
+    background-color: #1F2716;
     padding: 10px;
 }
 
@@ -114,7 +165,7 @@ footer {
     display: none;
     min-width: 100%;
     left: 0;
-    background-color: #384628;
+    background-color: #1F2716;
     padding: 10px;
 }
 
@@ -122,7 +173,7 @@ footer {
     display: none;
     min-width: 100%;
     left: 0;
-    background-color: #384628;
+    background-color: #1F2716;
     padding: 10px;
 }
 /* Footer farver, text og position slutter her */
