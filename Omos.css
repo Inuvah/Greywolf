@@ -18,6 +18,10 @@ html, body {
     height: 400px;
 }
 
+.modtag {
+    font-size: x-large;
+}
+
 
 /* Søge knappen starter */
 .søgefeltomos {

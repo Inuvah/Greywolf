@@ -47,7 +47,9 @@ h3 {
         src: url(Fonts/Inter-Regular.ttf);
     }
 
-
+.modtag {
+    font-size: x-large;
+}
 
 
 /* Størrelse og farve valg starter */
@@ -120,7 +122,7 @@ h3 {
 
 form button {
     padding: 15px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     background-color: #94A195;
     color: #fff;
     font-size: 14px;

@@ -28,7 +28,7 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html" class="active">Hjem</a> 
+                <a href="index.html">Hjem</a> 
             </li>
             <li>
                 <a href="Produktside.html">Produkter</a> 
@@ -37,7 +37,10 @@
                 <a href="kontaktos.html">Kontakt os</a> 
             </li>
             <li>
-                <a href="">Om os</a> 
+                <a href="Omos.html"class="active">Om os</a> 
+            </li>
+            <li>
+                <a href="nyhedsbrev.html">Nyhedsbrev</a> 
             </li>
             <li>
                 <a href="">Log ind</a> 
@@ -102,6 +105,24 @@
         <p>Bomuld er 100% naturligt materiale som er et genanvendeligt og miljøvenligt fiber, som gror på marker uden nogen former for kemiske processer for at blive omdannet til tekstil.</p>
     </section>
 
+    <!--Nyhedsbrev boks starter her-->
+<section action="/action_page.php">
+    <div class="tilmeldboks">
+      <h2 class="modtag">Modtag nyheder og inspiration fra Grey Wolf</h2>
+      <p class="tilmeld">Tilmeld dig nyhedsbrevet</p>
+      <input type="text" placeholder="Navn" name="name" required>
+      <input type="text" placeholder="Email addresse" name="mail" required>
+      <label>
+        <input type="checkbox" checked="checked" name="subscribe"> Ugentlig nyhedsbrev
+      </label>
+    </div>
+  
+    <div class="tilmeldboks">
+      <input type="submit" value="Tilmeld mig">
+    </div>
+</section>
+  <!--Nyhedsbrev boks slutter her-->
+
     <!--Footer - SOME slutter -->
     <section class="somefooter">
         <div class="somebilleder">
@@ -130,20 +151,20 @@
         <button onclick="helpFunction()" class="helpbtn">Hjælp</button>
         <div class="help" id="helpInfo">
             <ul>
-                <li><a href="">Ombytning/retur</a></li>
-                <li><a href="">Handelsbetingelser</a></li>
-                <li><a href="">Privatlivspolitik</a></li>
-                <li><a href="">Fragt og levering</a></li>
+                <li><a href="kontaktos.html">Ombytning/retur</a></li>
+                <li><a href="kontaktos.html">Handelsbetingelser</a></li>
+                <li><a href="kontaktos.html">Privatlivspolitik</a></li>
+                <li><a href="kontaktos.html">Fragt og levering</a></li>
             </ul>
         </div>
 
         <button onclick="linkFunction()" class="linkbtn">Links</button>
         <div class="links" id="linkInfo">
             <ul>
-                <li><a href="">Bæredygtighed</a></li>
-                <li><a href="">Om os</a></li>
-                <li><a href="">Kontakt os</a></li>
-                <li><a href="">Support center</a></li>
+                <li><a href="Omos.html">Bæredygtighed</a></li>
+                <li><a href="Omos.html">Om os</a></li>
+                <li><a href="kontaktos.html">Kontakt os</a></li>
+                <li><a href="kontaktos.html">Support center</a></li>
             </ul>
         </div>
         <script src="footer.js"></script>

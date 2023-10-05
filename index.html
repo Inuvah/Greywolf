@@ -40,7 +40,10 @@
                 <a href="kontaktos.html">Kontakt os</a> 
             </li>
             <li>
-                <a href="">Om os</a> 
+                <a href="Omos.html">Om os</a> 
+            </li>
+            <li>
+                <a href="nyhedsbrev.html">Nyhedsbrev</a> 
             </li>
             <li>
                 <a href="">Log ind</a> 
@@ -90,7 +93,7 @@
 <!--Søgebar-->
 
 
-    <!--Kategori-->
+    <!--Kategori starter her-->
     <h2 class="kategori">Kategori</h2>
     <div class="category">
         <div class="scroll">
@@ -100,8 +103,9 @@
             <div><a href="produktsidebukser.html"><img src="img/bukserCat.png" alt=""></a><p>Bukser</p></div>
         </div>
     </div>
+    <!--Kategori slutter her-->
 
-    <!--Mest populære-->
+    <!--Mest populære starter her-->
     <h3 class="mestpopulære">Mest populære</h3>
     <div class="popular">
         <div class="scroll">
@@ -110,9 +114,13 @@
             <div><a href="produktsidehoodie.html"><img src="img/hoodies/beige 1.png" alt=""></a><p>Hoodie - Beige</p></div>
         </div>
     </div>
+    <!--Mest populære slutter her-->
+
+    <!--Video-->
     <video controls width="100%" autoplay muted loop>
         <source src="video/Gray wolf.mov">
     </video>
+    <!--Video-->
 
     <h1 style="margin-left: 10%; margin-top: 5%;">Vores Koncept</h1>
     <div class="textOs">
@@ -120,8 +128,26 @@
     </div>
 
     <div class="forsideKvinde">
-    <img src="img/kvindesorttshirt.png" alt="forsideKvinde" style="width: 100%; margin: -45% 20% 20% 0%;">
+    <img src="img/kvindesorttshirt.png" alt="forsideKvinde">
     </div>
+    
+
+<!--Nyhedsbrev boks starter her-->
+<form action="/action_page.php">
+  <div class="tilmeldboks">
+    <h2 class="modtag">Modtag nyheder og inspiration fra Grey Wolf</h2>
+    <p class="tilmeld">Tilmeld dig nyhedsbrevet</p>
+    <input type="text" placeholder="Navn" name="name" required>
+    <input type="text" placeholder="Email addresse" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" class="subscribe"> Ugentlig nyhedsbrev
+    </label>
+  <div class="tilmeldboks">
+    <input type="submit" value="Tilmeld mig">
+  </div>
+</div>
+</form>
+<!--Nyhedsbrev boks slutter her-->
 
     <!--Footer - SOME slutter -->
     <section class="somefooter">
@@ -154,23 +180,51 @@
         <button onclick="helpFunction()" class="helpbtn">Hjælp</button>
         <div class="help" id="helpInfo">
             <ul>
-                <li><a href="">Ombytning/retur</a></li>
-                <li><a href="">Handelsbetingelser</a></li>
-                <li><a href="">Privatlivspolitik</a></li>
-                <li><a href="">Fragt og levering</a></li>
+                <li><a href="kontaktos.html">Ombytning/retur</a></li>
+                <li><a href="kontaktos.html">Handelsbetingelser</a></li>
+                <li><a href="kontaktos.html">Privatlivspolitik</a></li>
+                <li><a href="kontaktos.html">Fragt og levering</a></li>
             </ul>
         </div>
 
         <button onclick="linkFunction()" class="linkbtn">Links</button>
         <div class="links" id="linkInfo">
             <ul>
-                <li><a href="">Bæredygtighed</a></li>
-                <li><a href="">Om os</a></li>
-                <li><a href="">Kontakt os</a></li>
-                <li><a href="">Support center</a></li>
+                <li><a href="Omos.html">Bæredygtighed</a></li>
+                <li><a href="Omos.html">Om os</a></li>
+                <li><a href="kontaktos.html">Kontakt os</a></li>
+                <li><a href="kontaktos.html">Support center</a></li>
             </ul>
         </div>
         <script src="footer.js"></script>
     </footer>
+    
+    <!-- Til toppen knap starter her-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img class="arrow-up" src="img/icons/arrow-up.svg" alt=""></button>
+    
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    <!-- Til toppen knap slutter her-->
+
 </body>
 </html>
