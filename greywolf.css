@@ -42,21 +42,6 @@ html, body {
 }
 
 
-/* Footer farver, text og position starter her */
-
-.container {
-    height: 400px;
-}
-
-.container img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-/* Footer farver, text og position slutter her */
-
-
 /* Søge knappen starter */
 .søgefelt {
     padding: 10px 20px;
@@ -183,7 +168,7 @@ footer {
 
 /* Billede SLIDER starter her */
 .container2 {
-    margin-top: -70px;
+    margin-top: -80px;
     margin-left: 0px;
     margin-right: 0px;
 }
