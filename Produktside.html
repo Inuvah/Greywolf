@@ -6,6 +6,7 @@
     <title>Produkter</title>
     <link rel="stylesheet" href="greywolf.css">
     <link rel="stylesheet" href="navbar.css">
+    
 </head>
 <body>
 
@@ -27,10 +28,10 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html" class="active">Hjem</a> 
+                <a href="index.html">Hjem</a> 
             </li>
             <li>
-                <a href="Produktside.html">Produkter</a> 
+                <a href="Produktside.html" class="active">Produkter</a> 
             </li>
             <li>
                 <a href="kontaktos.html">Kontakt os</a> 
@@ -51,23 +52,45 @@
 </header>
 <!--Header logo/navigation/burgermenu slutter her-->
 
-
-            <div id="BtnFilter">
-                <button class="btn active" onclick="filterSelection('all')">Alle</button>
-                <button class="btn" onclick="filterSelection('hoodie')">Hoodies</button>
-                <button class="btn" onclick="filterSelection('t-shirts')">T-shirts</button>
-                <button class="btn" onclick="filterSelection('bukser')">Bukser</button>
-            </div>
-    <div class="filterContainer">
-        <div class="filterDiv hoodie" id="hoodieProdukter"></div>
-        <div class="filterDiv t-shirts" id="t-shirtprodukter"></div>
-        <div class="filterDiv bukser" id="bukserprodukter"></div>
+<!--Filter knapperne starter her-->
+<div class="btncontainer">
+    <div id="BtnFilter">
+        <button class="btn active" onclick="filterSelection('all')">Alle</button>
+        <button class="btn" onclick="filterSelection('hoodie')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('t-shirts')">T-shirts</button>
+        <button class="btn" onclick="filterSelection('bukser')">Bukser</button>
     </div>
+</div>
+<!--Filter knapperne slutter her-->
+
+<!--Søgebar starter her-->
+<div class="søgefeltproduktside">
+    <form action="https://www.google.com/search" class="søgebar" method="get" class="søgebar">
+    <input type="text" placeholder="Søg.." name="q">
+    <button type="submit"><img class="søgeikon" src="img/icons/search.svg" alt=""></button> 
+    </form>
+</div>
+<!--Søgebar slutter her-->
+
+        <div class="filterContainer">
+            <div class="filterDiv hoodie" id="hoodieProdukter"></div>
+            <div class="filterDiv t-shirts" id="t-shirtprodukter"></div>
+            <div class="filterDiv bukser" id="bukserprodukter"></div>
+        </div>
     <script src="main.js"></script>
     <script src="shirts.js"></script>
     <script src="bukser.js"></script>
 
-
+<!--Footer - SOME slutter -->
+<section class="somefooter">
+    <div class="somebilleder">
+        <h3 class="sometitel">Connect with us</h3>
+        <a href="http://facebook.com"><img src="img/icons/facebook-kopi.png" alt=""></a>
+        <a href="http://instagram.com"></a><img src="img/icons/instagram-kopi.png" alt=""></a>
+        <a href="http://youtube.com"></a><img src="img/icons/youtube-kopi.png" alt=""></a>
+    </div>
+</section>
+<!--Footer - SOME slutter -->
 
  <!--Footer kontakt og andet relevant info-->
  <footer class="foot">
