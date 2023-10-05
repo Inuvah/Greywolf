@@ -42,12 +42,25 @@ html, body {
 }
 
 
+/* Footer farver, text og position starter her */
+
+.container {
+    height: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Footer farver, text og position slutter her */
 
 
 
 
 
-/*Footer farver, text og position*/
+/* Footer farver, text og position starter her */
 footer {
     width: 100%;
     background-color: #1F2716;
@@ -55,8 +68,6 @@ footer {
     position: relative;
     left: 0%;
     bottom: -100%;
-    padding-top: 5%;
-    padding-bottom: 5%;
     text-align: center;
 }
 
@@ -95,33 +106,127 @@ footer {
     display: none;
     min-width: 100%;
     left: 0;
+    background-color: #384628;
+    padding: 10px;
 }
 
 .help {
     display: none;
     min-width: 100%;
     left: 0;
+    background-color: #384628;
+    padding: 10px;
 }
 
 .links {
     display: none;
     min-width: 100%;
     left: 0;
+    background-color: #384628;
+    padding: 10px;
+}
+/* Footer farver, text og position slutter her */
+
+
+
+
+/* Billede SLIDER starter her */
+.container2 {
+    margin-top: -70px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
+.container2 .wrapper {
+    width: 100%;
+    height: 400px;
+    margin: 5rem auto;
+    overflow: auto;
+    align-items: center;
+    
+}
 
+.container2 .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite
+    alternate;
+}
 
+.container2 #slider-img-1 {
+    background-image: url(img/bomuldsmark.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
+.container2 #slider-img-2 {
+    background-image: url(img/luis-quintero-3qqiMT2LdR8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
+.container2 #slider-img-3 {
+    background-image: url(img/pexels-wladislawa-schröder-17963898.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
+.container2 #slider-img-4 {
+    background-image: url(img/green\ wood.png);
+    background-position: center;
+    background-size: cover;
+}
 
+.container2 .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
 
+.container2 .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+@keyframes slider {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+/* Billede slider styling slutter */
 
 
 /*En class tilføjet med JS for at vise og skjule menuen*/
 .show {
     display: inline-block;
 }
+
+.kategori {
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.mestpopulære {
+    margin-left: 7%;
+    margin-bottom: 3%;
+}
+
+
 
 /*Katagorier forside sliders*/
 .category {

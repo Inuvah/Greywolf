@@ -21,13 +21,14 @@ html, body {
 
 /* Søge knappen starter */
 .søgefelt {
-    padding: 15px 20px;
-    margin-bottom: 40px;
+    padding: 18px 20px;
+    margin-bottom: 30px;
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -175px;
 }
 
 .søgebar {
@@ -53,7 +54,7 @@ html, body {
 }
 
 ::placeholder {
-    color: rgb(125, 125, 125)
+    color: rgba(115, 115, 115, 0.8)
 }
 
 .søgebar button {

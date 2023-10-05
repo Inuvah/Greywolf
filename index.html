@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="greywolf.css">
+    <link rel="stylesheet" href="Omos.css">
 </head>
 <body>
 <!--Header logo/navigation-->
@@ -55,38 +56,43 @@
 </header>
 
 
+<!--Image slider starter her-->
+<main>
+    <div class="container2">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-1"></div>
+                <div id="slider-img-2"></div>
+                <div id="slider-img-3"></div>
+                <div id="slider-img-4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="button-holder">
+        <a href="#slider-img-1"
+        class="button"></a>
+        <a href="#slider-img-2"
+        class="button"></a>
+        <a href="#slider-img-3"
+        class="button"></a>
+        <a href="#slider-img-4"
+        class="button"></a>
+    </div>
+<!--Image slider slutter her-->
 
-<!-- Slideshow container -->
-<div class="container">
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="img/trisha-downing-pyud8ZaVq4I-unsplash.jpg" style="width:100%">
-      <div class="text">Bæredygtig</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="img/luis-quintero-3qqiMT2LdR8-unsplash.jpg" style="width:100%">
-      <div class="text">noget</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="img/HoodiesCat.png" style="width:50%">
-      <div class="text">ehhhm</div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
+<!--Søgebar-->
+<div class="søgefelt">
+    <form action="https://www.google.com/search" class="søgebar" method="get" class="søgebar">
+    <input type="text" placeholder="Søg.." name="q">
+    <button type="submit"><img class="søgeikon" src="img/icons/search.svg" alt=""></button> 
+    </form>
 </div>
+<!--Søgebar-->
+
 
     <!--Kategorier-->
-    <h1 style="margin-left: 7%;">Kategori</h1>
+    <h2 class="kategori">Kategori</h2>
     <div class="category">
         <div class="scroll">
             <div><img src="img/HoodiesCat.png" alt=""><p>Hoodies</p></div>
@@ -95,7 +101,7 @@
         </div>
     </div>
 
-    <h3 style="margin-left: 7%; margin-top: 5%;">Mest populære</h3>
+    <h3 class="mestpopulære">Mest populære</h3>
     <div class="popular">
         <div class="scroll">
             <div><img src="img/t-shirts/black 1.png" alt=""></div>
