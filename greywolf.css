@@ -725,3 +725,13 @@ footer {
     background-color: #1F2716;
     color: white;
   }
+
+  .btnShopNOW {
+    position: relative;
+    top: -175px;
+    left: 160px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+  }
