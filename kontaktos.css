@@ -71,8 +71,15 @@ main {
 
 /* Nyhedsbrev boks starter her */
 .tilmeldboks1 {
-    background-color: #b4b4b4;
+    background-color: #94A195;
     padding: 60px;
     color: rgb(0, 0, 0);  
 }
 /* Nyhedsbrev boks slutter her */
+
+.girl {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 300px;
+    
+}

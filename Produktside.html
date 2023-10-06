@@ -59,9 +59,9 @@
 <div class="btncontainer">
     <div id="BtnFilter">
         <button class="btn active" onclick="filterSelection('all')">Alle</button>
-        <button class="btn" onclick="filterSelection('hoodie')">Hoodies</button>
-        <button class="btn" onclick="filterSelection('t-shirts')">T-shirts</button>
-        <button class="btn" onclick="filterSelection('bukser')">Bukser</button>
+        <button class="btn" onclick="filterSelection('hoodie')"> <a href="produktsidehoodie.html" style="text-decoration: none; color: black;">Hoodies</a></button>
+        <button class="btn" onclick="filterSelection('t-shirts')"><a href="produktsidetshirt.html" style="text-decoration: none; color: black;">T-shirts</a></button>
+        <button class="btn" onclick="filterSelection('bukser')"><a href="produktsidebukser.html" style="text-decoration: none; color: black;">Bukser</a></button>
     </div>
 </div>
 <!--Filter knapperne slutter her-->
@@ -87,20 +87,20 @@
 <!--Tekst til billede slutter her-->
 
 <!--Nyhedsbrev boks starter her-->
-<section action="/action_page.php">
+<form action="/action_page.php">
     <div class="tilmeldboks">
       <h2 class="modtag">Modtag nyheder og inspiration fra Grey Wolf</h2>
       <p class="tilmeld">Tilmeld dig nyhedsbrevet</p>
-      <input type="text" placeholder="Navn" name="name" required>
-      <input type="text" placeholder="Email addresse" name="mail" required>
+      <input type="text" placeholder="Navn" name="name" required style="border-radius: 10px;">
+      <input type="text" placeholder="Email addresse" name="mail" required style="border-radius: 10px;">
       <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Ugentlig nyhedsbrev
+        <input type="checkbox" checked="checked" class="subscribe"> Ja, jeg ønsker at modtage henvendelser fra bareen vedrørende tilbud, nyheder og produkter indenfor deres produktsortiment via email. Dit samtykke kan til enhver tid tilbagekaldes ved at skrive til os på: info@greywolf.dk
       </label>
     <div class="tilmeldboks">
       <input type="submit" value="Tilmeld mig">
     </div>
-</div>
-</section>
+  </div>
+  </form>
   <!--Nyhedsbrev boks slutter her-->
 
 <!--Footer - SOME slutter -->

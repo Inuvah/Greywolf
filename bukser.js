@@ -1,25 +1,25 @@
 //Array liste af info om hoodie produkter
 var jsonObj = {"bukser": [
     {
-    title: '349,00 kr',
+    title: '349 kr',
     id: "1",
     imgUrl:'img/brown 1.png',
     color:'Bukser: Mørk beige',
 },
 {
-    title: '349,00 kr',
+    title: '349 kr',
     id: "2",
     imgUrl:'img/black 1.png',
     color:'Bukser: Sort',
 },
 {
-    title: '349,00 kr',
+    title: '349 kr',
     id: "3",
     imgUrl:'img/white 1.png',
     color:'Bukser: Hvid',
 },
 {
-    title: '349,00 kr',
+    title: '349 kr',
     id: "4",
     imgUrl:'img/grey 1.png',
     color:'Bukser: Grå',

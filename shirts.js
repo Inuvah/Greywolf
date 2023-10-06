@@ -1,25 +1,25 @@
 //Array liste af info om hoodie produkter
 var jsonObj = {"tshirts": [
     {
-    title: '299,00 kr',
+    title: '299 kr',
     id: "1",
     imgUrl:'img/t-shirts/green 1.png',
     color:'T-shirt: Olivengrøn',
 },
 {
-    title: '299,00 kr',
+    title: '299 kr',
     id: "2",
     imgUrl:'img/t-shirts/black 1.png',
     color:'T-shirt: Sort',
 },
 {
-    title: '299,00 kr',
+    title: '299 kr',
     id: "3",
     imgUrl:'img/t-shirts/white 1.png',
     color:'T-shirt: Hvid',
 },
 {
-    title: '299,00 kr',
+    title: '299 kr',
     id: "4",
     imgUrl:'img/t-shirts/grey 1.png',
     color:'T-shirt: Grå'

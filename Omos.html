@@ -55,12 +55,14 @@
 </header>
 <!--Header logo/navigation/burgermenu slutter her-->
 
+<!--Tekst på billede-->
     <section>
         <p><img src="img/clark-street-mercantile-qnKhZJPKFD8-unsplash.jpg" alt="billedemedtekst" class="billedemedtekst">
         <h1></h1>
         <h2 class="btekst">Om os /<br> Hvorfor er vi bæredygtige</h2>
+        </p>
     </section>
-    </p>
+<!--Tekst på billede-->
     
     <div class="søgefeltomos">
         <form action="https://www.google.com/search" class="søgebar" method="get" class="søgebaromos">
@@ -98,29 +100,30 @@
         </p>
     </section>
     
-    <img src="img/yulya-korban-Wps_QXbuDAo-unsplash.jpg" alt="bomuld" class="bomuld">
+    <img src="img/stock-photo-the-blue-shirt-is-damaged-background-1463944127.png" alt="bomuld" class="bomuld">
     
     <section class="tekst4">
         <h3>100% økologisk bomuld</h3>
         <p>Bomuld er 100% naturligt materiale som er et genanvendeligt og miljøvenligt fiber, som gror på marker uden nogen former for kemiske processer for at blive omdannet til tekstil.</p>
     </section>
 
+    <img src="img/yulya-korban-Wps_QXbuDAo-unsplash.jpg" alt="bomuld" class="bomuld">
+
     <!--Nyhedsbrev boks starter her-->
-<section action="/action_page.php">
+<form action="/action_page.php">
     <div class="tilmeldboks">
       <h2 class="modtag">Modtag nyheder og inspiration fra Grey Wolf</h2>
       <p class="tilmeld">Tilmeld dig nyhedsbrevet</p>
-      <input type="text" placeholder="Navn" name="name" required>
-      <input type="text" placeholder="Email addresse" name="mail" required>
+      <input type="text" placeholder="Navn" name="name" required style="border-radius: 10px;">
+      <input type="text" placeholder="Email addresse" name="mail" required style="border-radius: 10px;">
       <label>
-        <input type="checkbox" checked="checked" name="subscribe"> Ugentlig nyhedsbrev
+        <input type="checkbox" checked="checked" class="subscribe"> Ja, jeg ønsker at modtage henvendelser fra bareen vedrørende tilbud, nyheder og produkter indenfor deres produktsortiment via email. Dit samtykke kan til enhver tid tilbagekaldes ved at skrive til os på: info@greywolf.dk
       </label>
-    </div>
-  
     <div class="tilmeldboks">
       <input type="submit" value="Tilmeld mig">
     </div>
-</section>
+  </div>
+  </form>
   <!--Nyhedsbrev boks slutter her-->
 
     <!--Footer - SOME slutter -->
@@ -169,5 +172,32 @@
         </div>
         <script src="footer.js"></script>
     </footer>
+    
+    <!-- Til toppen knap starter her-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img class="arrow-up" src="img/icons/arrow-up.svg" alt=""></button>
+    
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    <!-- Til toppen knap slutter her-->
 </body>
 </html>
